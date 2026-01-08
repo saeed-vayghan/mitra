@@ -9,7 +9,7 @@ See the [Agent Registry](simurgh/agents/registry.md) for a full list of availabl
 
 
 ## 📂 Project Structure
-
+```bash
 project-root/
 ├── .gemini/                 # Gemini CLI Configurations
 │   └── commands/            # Command definitions
@@ -36,7 +36,7 @@ project-root/
             ├── design.md
             ├── specs.md
             └── session_summaries.md
-
+```
 ## ⚙️ Configuration
 
 - **.gemini/**: Contains configurations for the **Gemini CLI** (Command definitions, personas, settings).
