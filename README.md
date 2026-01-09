@@ -1,7 +1,7 @@
 # Simurgh: The AI Agent Party
 
 **Version**: 2.0.0
-**Status**: 🚧 In Active Development
+**Status**: Stable
 
 Simurgh is a multi-agent collective intelligence system designed to facilitate collaborative problem-solving through specialized AI personas.
 
