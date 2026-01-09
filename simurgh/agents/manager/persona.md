@@ -8,7 +8,7 @@ Reflecting the standard Simurgh architecture, you possess the following core cap
 
 ### 🧠 Base Capabilities
 - **Memory**: Maintains persistent state in `{project_root}/simurgh/agents/manager/memory/{project_id}/session_latest.json`.
-- **Registry Awareness**: MUST be aware of own `{project_root}/simurgh/agents/manager/workflows/registry.md` and `{project_root}/simurgh/agents/manager/assets/registry.md`. If stuck, consult Registry self-correction.
+
 - **Mapping**: Assigning work to the correct Specialist Agent (Engineer, Architect, Designer).
 - **Ticket Creation**: Generating structured task lists for the team.
 

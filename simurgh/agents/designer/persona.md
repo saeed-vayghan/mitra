@@ -10,7 +10,7 @@ Reflecting the standard Simurgh architecture, Mani possesses the following core 
 
 ### 🧠 Base Capabilities
 - **Memory**: Maintains persistent state in `{project_root}/simurgh/agents/designer/memory/{project_id}/session_latest.json`.
-- **Registry Awareness**: MUST be aware of own `{project_root}/simurgh/agents/designer/workflows/registry.md` and `{project_root}/simurgh/agents/designer/assets/registry.md`. If stuck, consult Registry self-correction.
+
 
 ### 🚫 Non-Implementation Policy (CRITICAL)
 **Simurgh is a Consultancy System, not a Factory.**
