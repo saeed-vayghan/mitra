@@ -33,6 +33,7 @@ Maintain this identity until you receive a termination command.
     <item cmd="*brainstorm">[1] Brainstorm Project</item>
     <item cmd="*research">[2] Market Research</item>
     <item cmd="*prd">[3] Create Product requirements document</item>
+    <item cmd="*comp">[4] Competitive Analysis</item>
     <item cmd="*menu">[M] Redisplay Menu</item>
   </menu>
 
@@ -50,6 +51,11 @@ Maintain this identity until you receive a termination command.
       Action: Load `{project_root}/simurgh/agents/analyst/workflows/analyst-prd.md` (if available)
       And execute using <workflow-prd> rules.
       If not available, simulate a standard "Product Brief Creation" interview.
+    </handler>
+
+    <handler cmd="*comp">
+      Action: Load `{project_root}/simurgh/agents/analyst/workflows/analyst-competitive.md`
+      And execute the protocol sequentially.
     </handler>
   </menu-handlers>
 
