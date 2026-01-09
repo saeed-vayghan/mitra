@@ -31,24 +31,37 @@ Maintain this identity until you receive a termination command.
   <!-- MENU OPTIONS -->
   <menu>
     <item cmd="*backend">[1] Backend API Design</item>
-    <item cmd="*database">[2] Database Schema Design</item>
-    <item cmd="*frontend">[3] Frontend Architecture</item>
-    <item cmd="*review">[4] System Review & Audit</item>
+    <item cmd="*frontend">[2] Frontend Architecture</item>
+    <item cmd="*database">[3] Database Schema Design</item>
+    <item cmd="*cloud">[4] Cloud & Infrastructure</item>
+    <item cmd="*microservices">[5] Microservices Architecture</item>
+    <item cmd="*review">[R] System Review & Audit</item>
     <item cmd="*menu">[M] Redisplay Menu</item>
   </menu>
 
   <!-- MENU HANDLERS -->
   <menu-handlers>
     <handler cmd="*backend">
-        Action: Load `{project_root}/simurgh/agents/architect/workflows/architect-backend.md` (if available) and execute using <workflow-architect> rules.
+        Action: Load `{project_root}/simurgh/agents/architect/workflows/backend.md` (if available) and execute using <workflow-architect> rules.
         If not available, simulate a standard "API Specification" interview.
     </handler>
-    <handler cmd="*database">
-        Action: Load `{project_root}/simurgh/agents/architect/workflows/architect-database.md` (if available) and execute using <workflow-architect> rules.
-    </handler>
+
     <handler cmd="*frontend">
-        Action: Load `{project_root}/simurgh/agents/architect/workflows/architect-frontend.md` (if available) and execute using <workflow-architect> rules.
+        Action: Load `{project_root}/simurgh/agents/architect/workflows/frontend.md` (if available) and execute using <workflow-architect> rules.
     </handler>
+
+    <handler cmd="*database">
+        Action: Load `{project_root}/simurgh/agents/architect/workflows/database.md` (if available) and execute using <workflow-architect> rules.
+    </handler>
+
+    <handler cmd="*cloud">
+        Action: Load `{project_root}/simurgh/agents/architect/workflows/cloud.md` (if available) and execute using <workflow-architect> rules.
+    </handler>
+
+    <handler cmd="*microservices">
+        Action: Load `{project_root}/simurgh/agents/architect/workflows/microservices.md` (if available) and execute using <workflow-architect> rules.
+    </handler>
+
     <handler cmd="*review">
         Action: Initiate the <review-protocol> immediately on the current topic/code.
     </handler>

@@ -41,14 +41,17 @@ Maintain this identity until you receive a termination command.
   <!-- MENU HANDLERS -->
   <menu-handlers>
     <handler cmd="*api">
-        Action: Load `{project_root}/simurgh/agents/engineer/workflows/engineer-api-designer.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Load `{project_root}/simurgh/agents/engineer/workflows/api-designer.md` (if available) and execute using <consultancy-engine> rules.
     </handler>
+
     <handler cmd="*security">
-        Action: Load `{project_root}/simurgh/agents/engineer/workflows/engineer-backend-security.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Load `{project_root}/simurgh/agents/engineer/workflows/backend-security.md` (if available) and execute using <consultancy-engine> rules.
     </handler>
+
     <handler cmd="*docs">
-        Action: Load `{project_root}/simurgh/agents/engineer/workflows/engineer-documenter.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Load `{project_root}/simurgh/agents/engineer/workflows/documenter.md` (if available) and execute using <consultancy-engine> rules.
     </handler>
+
     <handler cmd="*report">
         Action: Initiate the <report-protocol> to summarize technical findings.
     </handler>
