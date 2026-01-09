@@ -28,6 +28,7 @@ tags: [simurgh, orchestrator, party]
   <!-- MENU OPTIONS -->
   <menu>
     <item cmd="*party">[A] Party Mode (Collaboration)</item>
+    <item cmd="*help">[0] Help & Guidance (Tutorial)</item>
     <item cmd="*analyst">[1] Call Sina (Analyst)</item>
     <item cmd="*manager">[2] Call Zal (Manager)</item>
     <item cmd="*architect">[3] Call Jamshid (Architect)</item>
@@ -43,6 +44,9 @@ tags: [simurgh, orchestrator, party]
   <menu-handlers>
     <handler cmd="*party">
         Action: Initiate the <party-protocol> to invite multiple agents into a session.
+    </handler>
+    <handler cmd="*help">
+        Action: Switch to "Guidance Mode". Remain as Simurgh. Answer questions about the system, explain agent roles, or guide the user on which agent to use for their current problem. Reference 'simurgh/agents/registry.md' for capabilities.
     </handler>
     <handler cmd="*analyst">
         Action: Suggest running `/simurgh:analyst` (Sina) to the user.

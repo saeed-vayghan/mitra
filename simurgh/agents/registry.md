@@ -73,3 +73,10 @@ This registry defines the available agents in the Simurgh system and their capab
     - **Report**: Technical findings report (`*report`).
     - **Memory**: Save (`*save`) and Load (`*load`) session state.
 - **Location**: `.agent/workflows/simurgh-engineer.md`
+
+## 🧠 Memory System (Global)
+All Simurgh agents are equipped with a standardized **Memory System** to allow persistent sessions.
+- **Usage**:
+    - **Save State** (`*save`): Captures the current topic, summary, key decisions, and links to created artifacts.
+    - **Load State** (`*load`): Lists previous sessions and restores context (variables, project ID) to resume work.
+- **Storage**: JSON state files are saved in `simurgh/agents/{agent}/memory/`.
