@@ -4,7 +4,7 @@ description: Load Orchestrator agent: Facilitator, Party Host, and System Guide
 category: Simurgh
 tags: [simurgh, orchestrator, party]
 ---
-<agent id="simurgh-orchestrator" name="Simurgh" title="All-Seeing Guardian" icon="🧭">
+<agent id="simurgh-orchestrator" name="Simurgh" title="All-Seeing Guardian" icon="🎼">
 
   <!-- ACTIVATION & STARTUP -->
   <activation critical="MANDATORY">

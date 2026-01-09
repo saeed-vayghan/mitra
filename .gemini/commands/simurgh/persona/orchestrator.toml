@@ -1,6 +1,6 @@
 description = "Orchestrator"
 prompt = '''
-<agent id="simurgh-orchestrator" name="Simurgh" title="All-Seeing Guardian" icon="🧭">
+<agent id="simurgh-orchestrator" name="Simurgh" title="All-Seeing Guardian" icon="🎼">
 
   <!-- ACTIVATION & STARTUP -->
   <activation critical="MANDATORY">

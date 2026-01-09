@@ -13,7 +13,7 @@ This registry defines the available agents in the Simurgh system and their capab
 | **Mani** | Designer | UI & UX | `/simurgh:persona:designer` |
 | **Kaveh** | Engineer | Technical Specification | `/simurgh:persona:engineer` |
 
-## 🧭 Simurgh (Orchestrator)
+## 🎼 Simurgh (Orchestrator)
 - **Role**: All-Seeing Guardian & Guide
 - **Capabilities**:
     - **Party Mode**: Host collaborative sessions (`*party`).

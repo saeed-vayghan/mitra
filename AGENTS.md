@@ -1,97 +1,70 @@
-# Simurgh Agents System
+# Simurgh Agents: Operational Manual
 
-The **Simurgh** system consists of specialized AI agents working together as a collective intelligence. This document outlines the system architecture, file structure, and core capabilities.
+> **For AI Agents:** This document is your primary directive when working within the `project-specy-party` repository. Follow these protocols strictly.
 
 ## 🦅 The Roster
 
-| Agent | Role | Focus |
-| :--- | :--- | :--- |
-| **Simurgh** | Orchestrator | Guidance, Routing, Party Host |
-| **Zal** | Manager | Planning, Sprints, Task Dispatch |
-| **Sina** | Analyst | Requirements, Research, Strategy |
-| **Jamshid** | Architect | Backend, Frontend, Cloud Systems |
-| **Mani** | Designer | UI, UX, Design Systems |
-| **Kaveh** | Engineer | Technical Specs, Security, Docs |
+| Agent | Role | Focus | ID |
+| :--- | :--- | :--- | :--- |
+| **Simurgh** | Orchestrator | Guidance, Routing | `simurgh-orchestrator` |
+| **Zal** | Manager | Planning, Sprints | `simurgh-manager` |
+| **Sina** | Analyst | Requirements | `simurgh-analyst` |
+| **Jamshid** | Architect | Systems & Data | `simurgh-architect` |
+| **Mani** | Designer | UI/UX | `simurgh-designer` |
+| **Kaveh** | Engineer | Tech Specs | `simurgh-engineer` |
 
-See the [Agent Registry](simurgh/agents/registry.md) for detailed capabilities.
+## 📂 Repository Layout
 
----
+- **`.agent/workflows/`**: [SOURCE OF TRUTH] The master XML definitions for all agents. **Edit these first.**
+- **`.gemini/commands/`**: Gemini CLI interfaces. *Must mirror the Source of Truth.*
+- **`.claude/commands/`**: Claude CLI interfaces. *Must mirror the Source of Truth.*
+- **`simurgh/agents/`**: Support file storage (personas, registry, memory).
+- **`docs/consultancy/`**: The strictly designated output folder for all agent artifacts.
 
-## 🏗️ System Architecture
+## 🛠️ Development Workflow
 
-### 1. Source of Truth (XML)
-The definitive logic for every agent is defined in **XML-wrapped Markdown** files within `.agent/workflows/`.
-- **Location**: `.agent/workflows/simurgh-{agent}.md`
-- **Content**: Persona, Menu Options, Handlers, System Instructions, and Embedded Resources.
+### 1. Modifying an Agent
+When adding a capability or fixing a bug in an agent's logic:
+1.  **Edit XML**: Modify `.agent/workflows/simurgh-{agent}.md`.
+    *   *Rule*: Update the `<menu>` and `<menu-handlers>` sections together.
+2.  **Sync Gemini**: Copy updates to `.gemini/commands/simurgh/persona/{agent}.toml`.
+    *   *Note*: Ensure the TOML variable `prompt = '''...'''` wraps the XML correctly.
+3.  **Sync Claude**: Copy updates to `.claude/commands/simurgh/{agent}.md`.
+4.  **Update Registry**: Reflect changes in `simurgh/agents/registry.md`.
 
-### 2. CLI Synchronization
-The XML definitions are synchronized to CLI-specific configurations to ensure consistent behavior across platforms:
-- **Gemini**: `.gemini/commands/simurgh/persona/{agent}.toml`
-- **Claude**: `.claude/commands/simurgh/{agent}.md`
+### 2. Creating a New Workflow
+1.  **Create**: New file in `simurgh/agents/{agent}/workflows/{workflow_name}.md`.
+2.  **Header**: Include a YAML frontmatter with `description` and `version`.
+3.  **Body**: Define the step-by-step process for the agent to follow.
+4.  **Link**: Add a handler in the Agent's XML to load this workflow.
 
-> [!IMPORTANT]
-> **Edit Rule**: Always edit the **XML** files in `.agent/workflows/` first. Then sync changes to `.gemini` and `.claude`.
+## 🧠 Memory System Protocols
 
----
+**Global Capability**: All agents support `*save` and `*load`.
 
-## 🧠 Memory System (New)
+-   **State Path**: `simurgh/agents/{agent}/memory/state-{yyyy-mm-dd}-{topic}.json`
+-   **Schema**:
+    ```json
+    {
+      "timestamp": "ISO-8601",
+      "context": { "topic": "...", "summary": "..." },
+      "artifacts": [ { "type": "PRD", "path": "docs/consultancy/..." } ]
+    }
+    ```
+-   **Rule**: Never modify the `memory-manager.md` logic without testing the JSON read/write cycle.
 
-All agents now possess **Long-Term Memory** to persist session context.
+## ✅ Verification Checklist
 
-### Capabilities
-- **`*save`**: Saves the current session state, including:
-    - Project context (`project_id`, `user_name`)
-    - Session Summary & Key Decisions
-    - Links to created Artifacts (PRDs, Specs, etc.)
-    - Next Steps
-- **`*load`**: Lists saved sessions and restores variables to resume work exactly where you left off.
+Before confirming a task is complete, ensure:
 
-### Storage
-State files are stored as JSON in: `simurgh/agents/{agent}/memory/state-{yyyy-mm-dd}-{topic}.json`.
+- [ ] **XML Validity**: No broken tags in `.agent` files.
+- [ ] **Sync Check**: Do `.gemini` and `.claude` match the `.agent` XML?
+- [ ] **Directory Exists**: Did you create the `memory/` or `workflows/` folder if it was new?
+- [ ] **Consultancy Rule**: Did you ensure NO implementation code was generated for the target app?
+- [ ] **Registry**: Is the new feature listed in `simurgh/agents/registry.md`?
 
----
+## ⛔ Constraints & Laws
 
-## 📂 Project Structure
-
-```bash
-project-root/
-├── .agent/workflows/          # [SOURCE OF TRUTH] Agent XML Definitions
-├── .gemini/                   # Gemini CLI Configuration (Synced)
-├── .claude/                   # Claude CLI Configuration (Synced)
-├── simurgh/                   # Core Logic & Resources
-│   └── agents/
-│       ├── registry.md        # Central Capabilities List
-│       └── {agent}/           # e.g., analyst, architect
-│           ├── persona.md     # Narrative Identity
-│           ├── workflows/     # Task-specific Logic (e.g., prd.md, memory-manager.md)
-│           └── memory/        # [NEW] JSON State Files
-└── docs/
-    └── consultancy/           # Output Directory
-        └── {project_id}/      # All generated docs go here
-            ├── 2026-01-09-PRD.md
-            └── design-system.md
-```
-
-## 📜 Consultancy Policy
-
-**Simurgh Agents are Consultants, not Coders.**
-- **Output**: Specifications, Plans, Diagrams, Reports, and Analysis.
-- **Restriction**: Agents do NOT write implementation code (no production Python/JS/etc.).
-- **Goal**: To provide the highest level of strategic and architectural guidance for the Human Developer to implement.
-
-## 🚀 Interaction
-
-### 1. Orchestrator (Hub)
-Start here if you need guidance or want to collaborate with multiple agents.
-```bash
-/simurgh:orchestrator
-```
-*Menu includes: `*party` (Multi-agent), `*help` (Tutorial), and direct calls to other agents.*
-
-### 2. Direct Access
-Call specific specialists directly:
-- `/simurgh:persona:manager` (Zal)
-- `/simurgh:persona:architect` (Jamshid)
-- `/simurgh:persona:analyst` (Sina)
-- `/simurgh:persona:engineer` (Kaveh)
-- `/simurgh:persona:designer` (Mani)
+1.  **Consultants Only**: Agents produce specs, plans, and docs. They do NOT write app code (e.g., `src/index.js`).
+2.  **Unified Context**: All agents must read `config.yaml` to respect `project_id`.
+3.  **Output Isolation**: All artifacts must go to `docs/consultancy/{project_id}/`.
