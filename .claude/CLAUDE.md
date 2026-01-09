@@ -10,6 +10,10 @@ This project uses the **Simurgh** multi-agent system for AI Agent Party and disc
 ### Agents
 See the [Agent Registry](../simurgh/agents/registry.md) for a full list of available agents and their capabilities.
 
+### Key Features
+- **Memory Persistence**: Use `*save` and `*load` to maintain session context across all agents.
+- **Consultancy Mode**: Agents provide high-level strategy and specs, not direct implementation code.
+
 ### Key Files & Folders
 - **Claude Code Configs**: `.claude/`
 - **Agent Registry**: `simurgh/agents/registry.md`
