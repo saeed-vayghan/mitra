@@ -4,11 +4,11 @@
 - **Communication Language**: English
 
 
-## 🦅 Simurgh System
-This project uses the **Simurgh** multi-agent system for AI Agent Party and discussion. It enables a collaborative environment where specialized agents work together to solve complex problems.
+## 🦅 Mitra System
+This project uses the **Mitra** multi-agent system for AI Agent Party and discussion. It enables a collaborative environment where specialized agents work together to solve complex problems.
 
 ### Agents
-See the [Agent Registry](../simurgh/agents/registry.md) for a full list of available agents and their capabilities.
+See the [Agent Registry](../mitra/agents/registry.md) for a full list of available agents and their capabilities.
 
 ### Key Features
 - **Memory Persistence**: Use `*save` and `*load` to maintain session context across all agents.
@@ -16,11 +16,11 @@ See the [Agent Registry](../simurgh/agents/registry.md) for a full list of avail
 
 ### Key Files & Folders
 - **Claude Code Configs**: `.claude/`
-- **Agent Registry**: `simurgh/agents/registry.md`
-- **Party Guide**: `simurgh/docs/party_mode.md`
+- **Agent Registry**: `mitra/agents/registry.md`
+- **Party Guide**: `mitra/docs/party_mode.md`
 
 ## 🚀 Quick Start
 To start working with the collective intelligence:
 ```bash
-/simurgh:orchestrator
+/mitra:orchestrator
 ```

@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the **Simurgh** multi-agent system will be documented in this file.
+All notable changes to the **Mitra** multi-agent system will be documented in this file.
 
 ## [2.0.0] - 2026-01-09
 
@@ -25,13 +25,13 @@ Version 2.0.0 introduces a comprehensive overhaul of the agent architecture, est
     -   Schema includes: `session_summary`, `key_decisions`, `next_steps`, and `artifacts`.
 -   **XML Source of Truth**: Agent behaviors are now defined once in `.agent/workflows/` and propagated to all CLI platforms.
 -   **Orchestrator Help**: Added `[0] Help & Guidance` (`*help`) to the Orchestrator for interactive tutorials and validiation.
--   **Agent Registry**: A centralized `simurgh/agents/registry.md` now acts as the capabilities catalog.
+-   **Agent Registry**: A centralized `mitra/agents/registry.md` now acts as the capabilities catalog.
 
 ### 🛠️ Changes
 
 -   **Folder Structure**:
-    -   Added `simurgh/agents/{agent}/memory/` for state tables.
-    -   Standardized workflow paths to `simurgh/agents/{agent}/workflows/`.
+    -   Added `mitra/agents/{agent}/memory/` for state tables.
+    -   Standardized workflow paths to `mitra/agents/{agent}/workflows/`.
 -   **CLI Configuration**:
     -   Gemini `.toml` files are now strictly generated from the XML source.
     -   Claude `.md` files are now strictly generated from the XML source.

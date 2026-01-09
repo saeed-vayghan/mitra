@@ -26,8 +26,8 @@ Execute the following steps sequentially. Obtain user confirmation after each ma
 ### 3. Command Generation
 **Goal**: Execution validation.
 - **Action**: Generate the sequence of commands for the User.
-    - `Step 1: /simurgh:architect (Topic: User Schema)`
-    - `Step 2: /simurgh:engineer (Topic: Auth API)`
+    - `Step 1: /mitra:architect (Topic: User Schema)`
+    - `Step 2: /mitra:engineer (Topic: Auth API)`
 
 ### 4. Output Generation
 - **Deliverable**: A "Dispatch Plan" identifying who does what and in which order.

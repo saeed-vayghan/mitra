@@ -1,26 +1,26 @@
 # Agent Registry
 
-This registry defines the available agents in the Simurgh system and their capabilities. The Orchestrator uses this to route user requests.
+This registry defines the available agents in the Mitra system and their capabilities. The Orchestrator uses this to route user requests.
 
 ## Quick Reference
 
 | Agent | Role | Primary Focus | Trigger |
 | :--- | :--- | :--- | :--- |
-| **Simurgh** | Orchestrator | Guidance & Routing | `/simurgh:orchestrator` |
-| **Zal** | Manager | Planning & Coordination | `/simurgh:persona:manager` |
-| **Sina** | Analyst | Requirements & Strategy | `/simurgh:persona:analyst` |
-| **Jamshid** | Architect | Systems & Data | `/simurgh:persona:architect` |
-| **Mani** | Designer | UI & UX | `/simurgh:persona:designer` |
-| **Kaveh** | Engineer | Technical Specification | `/simurgh:persona:engineer` |
+| **Mitra** | Orchestrator | Guidance & Routing | `/mitra:orchestrator` |
+| **Zal** | Manager | Planning & Coordination | `/mitra:persona:manager` |
+| **Sina** | Analyst | Requirements & Strategy | `/mitra:persona:analyst` |
+| **Jamshid** | Architect | Systems & Data | `/mitra:persona:architect` |
+| **Mani** | Designer | UI & UX | `/mitra:persona:designer` |
+| **Kaveh** | Engineer | Technical Specification | `/mitra:persona:engineer` |
 
-## 🎼 Simurgh (Orchestrator)
+## 🎼 Mitra (Orchestrator)
 - **Role**: All-Seeing Guardian & Guide
 - **Capabilities**:
     - **Party Mode**: Host collaborative sessions (`*party`).
     - **Context**: Summarize project status (`*context`).
     - **Routing**: Direct users to the right expert.
     - **Memory**: Save (`*save`) and Load (`*load`) session state.
-- **Location**: `.agent/workflows/simurgh-orchestrator.md`
+- **Location**: `.agent/workflows/mitra-orchestrator.md`
 
 ## 👑 Zal (Manager)
 - **Role**: Wise Visionary & Planner
@@ -29,7 +29,7 @@ This registry defines the available agents in the Simurgh system and their capab
     - **Sprint Planning**: Define sprint goals and scope (`*sprint`).
     - **Dispatch**: Assign tasks to specialist agents (`*dispatch`).
     - **Memory**: Save (`*save`) and Load (`*load`) session state.
-- **Location**: `.agent/workflows/simurgh-manager.md`
+- **Location**: `.agent/workflows/mitra-manager.md`
 
 ## 📊 Sina (Analyst)
 - **Role**: Business Analyst
@@ -39,7 +39,7 @@ This registry defines the available agents in the Simurgh system and their capab
     - **PRD**: Create Product Requirements Documents (`*prd`).
     - **Competitive Analysis**: Analyze competitors (`*comp`).
     - **Memory**: Save (`*save`) and Load (`*load`) session state.
-- **Location**: `.agent/workflows/simurgh-analyst.md`
+- **Location**: `.agent/workflows/mitra-analyst.md`
 
 ## 🏛️ Jamshid (Architect)
 - **Role**: Great Builder
@@ -51,7 +51,7 @@ This registry defines the available agents in the Simurgh system and their capab
     - **Microservices**: Service boundaries (`*microservices`).
     - **Review**: System Audit (`*review`).
     - **Memory**: Save (`*save`) and Load (`*load`) session state.
-- **Location**: `.agent/workflows/simurgh-architect.md`
+- **Location**: `.agent/workflows/mitra-architect.md`
 
 ## 🎨 Mani (Designer)
 - **Role**: Master Artist
@@ -62,7 +62,7 @@ This registry defines the available agents in the Simurgh system and their capab
     - **User Flows**: Journey mapping (`*flow`).
     - **Audit**: Accessibility & UX review (`*audit`).
     - **Memory**: Save (`*save`) and Load (`*load`) session state.
-- **Location**: `.agent/workflows/simurgh-designer.md`
+- **Location**: `.agent/workflows/mitra-designer.md`
 
 ## ⚡ Kaveh (Engineer)
 - **Role**: Master Smith
@@ -72,11 +72,11 @@ This registry defines the available agents in the Simurgh system and their capab
     - **Docs**: Technical documentation (`*docs`).
     - **Report**: Technical findings report (`*report`).
     - **Memory**: Save (`*save`) and Load (`*load`) session state.
-- **Location**: `.agent/workflows/simurgh-engineer.md`
+- **Location**: `.agent/workflows/mitra-engineer.md`
 
 ## 🧠 Memory System (Global)
-All Simurgh agents are equipped with a standardized **Memory System** to allow persistent sessions.
+All Mitra agents are equipped with a standardized **Memory System** to allow persistent sessions.
 - **Usage**:
     - **Save State** (`*save`): Captures the current topic, summary, key decisions, and links to created artifacts.
     - **Load State** (`*load`): Lists previous sessions and restores context (variables, project ID) to resume work.
-- **Storage**: JSON state files are saved in `simurgh/agents/{agent}/memory/`.
+- **Storage**: JSON state files are saved in `mitra/agents/{agent}/memory/`.

@@ -70,7 +70,7 @@ When invoked:
 - **Security**: Are zero-trust and compliance controls in place?
 - **Observability**: Are metrics, logs, and traces properly configured?
 
-## Integration with Simurgh Agents
+## Integration with Mitra Agents
 - **devops-engineer**: Guide on cloud automation and CI/CD.
 - **sre-engineer**: Support on reliability patterns and SLOs.
 - **security-engineer**: Collaborate on cloud security posture and threat modeling.

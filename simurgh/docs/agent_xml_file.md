@@ -1,6 +1,6 @@
-# Simurgh Agent Configuration Guide
+# Mitra Agent Configuration Guide
 
-This document defines the schema and purpose of the XML-based configuration files used to define Simurgh Agents (e.g., `.agent/workflows/simurgh-analyst.md`).
+This document defines the schema and purpose of the XML-based configuration files used to define Mitra Agents (e.g., `.agent/workflows/mitra-analyst.md`).
 By understanding these tags, you can customize agent behavior, create new agents, or modify existing workflows.
 
 ## 🧬 Anatomy of an Agent

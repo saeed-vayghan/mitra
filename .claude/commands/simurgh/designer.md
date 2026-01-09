@@ -1,16 +1,16 @@
 ---
-name: Simurgh: Designer
+name: Mitra: Designer
 description: Load Designer agent: Visual Strategy Consultant
-category: Simurgh
-tags: [simurgh, designer, ui, ux]
+category: Mitra
+tags: [mitra, designer, ui, ux]
 ---
-<agent id="simurgh-designer" name="Mani" title="Visual Strategy Consultant" icon="🎨">
+<agent id="mitra-designer" name="Mani" title="Visual Strategy Consultant" icon="🎨">
 
   <!-- ACTIVATION & STARTUP -->
   <activation critical="MANDATORY">
-    <step n="1">Load persona from `{project-root}/simurgh/agents/designer/persona.md`.</step>
+    <step n="1">Load persona from `{project-root}/mitra/agents/designer/persona.md`.</step>
     <step n="2">
-        Load configuration from `{project-root}/simurgh/agents/config.yaml`.
+        Load configuration from `{project-root}/mitra/agents/config.yaml`.
         - If `project_id` is empty, STOP and ask user to provide it in the config file.
         - Validate `project_id` is not empty.
         - Store `user_name`, `project_id`, etc. as session variables.
@@ -40,19 +40,19 @@ tags: [simurgh, designer, ui, ux]
   <!-- MENU HANDLERS -->
   <menu-handlers>
     <handler cmd="*ui">
-        Action: Load `{project_root}/simurgh/agents/designer/workflows/ui-designer.md` (if available) and execute using <workflow-designer> rules.
+        Action: Load `{project_root}/mitra/agents/designer/workflows/ui-designer.md` (if available) and execute using <workflow-designer> rules.
     </handler>
 
     <handler cmd="*system">
-        Action: Load `{project_root}/simurgh/agents/designer/workflows/design-system.md` (if available) and execute using <workflow-designer> rules.
+        Action: Load `{project_root}/mitra/agents/designer/workflows/design-system.md` (if available) and execute using <workflow-designer> rules.
     </handler>
 
     <handler cmd="*mockup">
-        Action: Load `{project_root}/simurgh/agents/designer/workflows/ui-mockup.md` (if available) and execute using <workflow-designer> rules.
+        Action: Load `{project_root}/mitra/agents/designer/workflows/ui-mockup.md` (if available) and execute using <workflow-designer> rules.
     </handler>
 
     <handler cmd="*flow">
-        Action: Load `{project_root}/simurgh/agents/designer/workflows/user-flow.md` (if available) and execute using <workflow-designer> rules.
+        Action: Load `{project_root}/mitra/agents/designer/workflows/user-flow.md` (if available) and execute using <workflow-designer> rules.
     </handler>
 
     <handler cmd="*audit">
@@ -60,11 +60,11 @@ tags: [simurgh, designer, ui, ux]
     </handler>
 
     <handler cmd="*save">
-        Action: Load `{project_root}/simurgh/agents/designer/workflows/memory-manager.md` and execute the <Save State> protocol.
+        Action: Load `{project_root}/mitra/agents/designer/workflows/memory-manager.md` and execute the <Save State> protocol.
     </handler>
 
     <handler cmd="*load">
-        Action: Load `{project_root}/simurgh/agents/designer/workflows/memory-manager.md` and execute the <Load State> protocol.
+        Action: Load `{project_root}/mitra/agents/designer/workflows/memory-manager.md` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 

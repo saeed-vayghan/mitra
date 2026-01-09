@@ -1,7 +1,7 @@
 {
     "project": {
         "name": "AI Agents Party",
-        "description": "Simurgh Agents System"
+        "description": "Mitra Agents System"
     },
     "memory": {
         "file": ".gemini/GEMINI.md"

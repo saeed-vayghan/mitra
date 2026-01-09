@@ -20,7 +20,7 @@ This workflow enables the Analyst to save and restore rich session state, includ
     ```json
     {
       "timestamp": "{ISO-8601}",
-      "agent": "simurgh-analyst",
+      "agent": "mitra-analyst",
       "project_id": "{project_id}",
       "user_name": "{user_name}",
       "context": {
@@ -46,14 +46,14 @@ This workflow enables the Analyst to save and restore rich session state, includ
       ]
     }
     ```
-4.  **Write**: Save content to `simurgh/agents/analyst/memory/{filename}`.
+4.  **Write**: Save content to `mitra/agents/analyst/memory/{filename}`.
 5.  **Confirm**: "Session saved as `{filename}` strategy. You can restore this later with `*load`."
 
 ### 2. Load State (`*load`)
 **Trigger**: User runs `*load` or asks to "restore memory".
 
 **Steps**:
-1.  **List**: Scan `simurgh/agents/analyst/memory/` and list available files with their Timestamps and Topics.
+1.  **List**: Scan `mitra/agents/analyst/memory/` and list available files with their Timestamps and Topics.
     -   `[1] state-2026-01-09-simple-email-prd.json` (Topic: Simple Email App)
 2.  **Select**: Ask user to pick a number.
 3.  **Read**: Load the content of the selected JSON file.

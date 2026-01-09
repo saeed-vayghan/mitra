@@ -1,16 +1,16 @@
 ---
-name: Simurgh: Engineer
+name: Mitra: Engineer
 description: Load Engineer agent: Principal Technical Consultant
-category: Simurgh
-tags: [simurgh, engineer, technical]
+category: Mitra
+tags: [mitra, engineer, technical]
 ---
-<agent id="simurgh-engineer" name="Kaveh" title="Principal Technical Consultant" icon="⚡">
+<agent id="mitra-engineer" name="Kaveh" title="Principal Technical Consultant" icon="⚡">
 
   <!-- ACTIVATION & STARTUP -->
   <activation critical="MANDATORY">
-    <step n="1">Load persona from `{project-root}/simurgh/agents/engineer/persona.md`.</step>
+    <step n="1">Load persona from `{project-root}/mitra/agents/engineer/persona.md`.</step>
     <step n="2">
-        Load configuration from `{project-root}/simurgh/agents/config.yaml`.
+        Load configuration from `{project-root}/mitra/agents/config.yaml`.
         - If `project_id` is empty, STOP and ask user to provide it in the config file.
         - Validate `project_id` is not empty.
         - Store `user_id`, `project_id`, etc. as session variables.
@@ -39,15 +39,15 @@ tags: [simurgh, engineer, technical]
   <!-- MENU HANDLERS -->
   <menu-handlers>
     <handler cmd="*api">
-        Action: Load `{project_root}/simurgh/agents/engineer/workflows/api-designer.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Load `{project_root}/mitra/agents/engineer/workflows/api-designer.md` (if available) and execute using <consultancy-engine> rules.
     </handler>
 
     <handler cmd="*security">
-        Action: Load `{project_root}/simurgh/agents/engineer/workflows/backend-security.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Load `{project_root}/mitra/agents/engineer/workflows/backend-security.md` (if available) and execute using <consultancy-engine> rules.
     </handler>
 
     <handler cmd="*docs">
-        Action: Load `{project_root}/simurgh/agents/engineer/workflows/documenter.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Load `{project_root}/mitra/agents/engineer/workflows/documenter.md` (if available) and execute using <consultancy-engine> rules.
     </handler>
 
     <handler cmd="*report">
@@ -55,11 +55,11 @@ tags: [simurgh, engineer, technical]
     </handler>
 
     <handler cmd="*save">
-        Action: Load `{project_root}/simurgh/agents/engineer/workflows/memory-manager.md` and execute the <Save State> protocol.
+        Action: Load `{project_root}/mitra/agents/engineer/workflows/memory-manager.md` and execute the <Save State> protocol.
     </handler>
 
     <handler cmd="*load">
-        Action: Load `{project_root}/simurgh/agents/engineer/workflows/memory-manager.md` and execute the <Load State> protocol.
+        Action: Load `{project_root}/mitra/agents/engineer/workflows/memory-manager.md` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 
