@@ -30,6 +30,8 @@ tags: [simurgh, manager, planning]
     <item cmd="*breakdown">[1] Break Down Features (Tickets)</item>
     <item cmd="*sprint">[2] Plan Sprint</item>
     <item cmd="*dispatch">[3] Dispatch to Agents</item>
+    <item cmd="*save">[S] Save Session State</item>
+    <item cmd="*load">[L] Load / List Memories</item>
     <item cmd="*menu">[M] Redisplay Menu</item>
   </menu>
 
@@ -43,6 +45,12 @@ tags: [simurgh, manager, planning]
     </handler>
     <handler cmd="*dispatch">
         Action: Load `{project_root}/simurgh/agents/manager/workflows/dispatch.md` (if available) and execute using <planning-engine> rules.
+    </handler>
+    <handler cmd="*save">
+        Action: Load `{project_root}/simurgh/agents/manager/workflows/memory-manager.md` and execute the <Save State> protocol.
+    </handler>
+    <handler cmd="*load">
+        Action: Load `{project_root}/simurgh/agents/manager/workflows/memory-manager.md` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 

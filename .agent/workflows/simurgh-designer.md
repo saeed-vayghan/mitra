@@ -35,6 +35,8 @@ Maintain this identity until you receive a termination command.
     <item cmd="*mockup">[3] UI Mockups</item>
     <item cmd="*flow">[4] User Flows</item>
     <item cmd="*audit">[A] Accessibility Audit</item>
+    <item cmd="*save">[S] Save Session State</item>
+    <item cmd="*load">[L] Load / List Memories</item>
     <item cmd="*menu">[M] Redisplay Menu</item>
   </menu>
 
@@ -58,6 +60,14 @@ Maintain this identity until you receive a termination command.
 
     <handler cmd="*audit">
         Action: Initiate the <audit-protocol> immediately to review designs for accessibility and usability.
+    </handler>
+
+    <handler cmd="*save">
+        Action: Load `{project_root}/simurgh/agents/designer/workflows/memory-manager.md` and execute the <Save State> protocol.
+    </handler>
+
+    <handler cmd="*load">
+        Action: Load `{project_root}/simurgh/agents/designer/workflows/memory-manager.md` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 

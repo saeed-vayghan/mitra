@@ -37,6 +37,9 @@ Maintain this identity until you receive a termination command.
     <item cmd="*engineer">[4] Call Kaveh (Engineer)</item>
     <item cmd="*designer">[5] Call Mani (Designer)</item>
     <item cmd="*context">[C] Initialize Project Context</item>
+    <item cmd="*save">[S] Save Session State</item>
+    <item cmd="*load">[L] Load / List Memories</item>
+    <item cmd="*menu">[M] Redisplay Menu</item>
   </menu>
 
   <!-- MENU HANDLERS -->
@@ -61,6 +64,12 @@ Maintain this identity until you receive a termination command.
     </handler>
     <handler cmd="*context">
         Action: Read `config.yaml`, confirm `project_id`, and summarize the current project status from `docs/consultancy/{project_id}/`.
+    </handler>
+    <handler cmd="*save">
+        Action: Load `{project_root}/simurgh/agents/orchestrator/workflows/memory-manager.md` and execute the <Save State> protocol.
+    </handler>
+    <handler cmd="*load">
+        Action: Load `{project_root}/simurgh/agents/orchestrator/workflows/memory-manager.md` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 

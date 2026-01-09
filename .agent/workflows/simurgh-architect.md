@@ -36,6 +36,8 @@ Maintain this identity until you receive a termination command.
     <item cmd="*cloud">[4] Cloud & Infrastructure</item>
     <item cmd="*microservices">[5] Microservices Architecture</item>
     <item cmd="*review">[R] System Review & Audit</item>
+    <item cmd="*save">[S] Save Session State</item>
+    <item cmd="*load">[L] Load / List Memories</item>
     <item cmd="*menu">[M] Redisplay Menu</item>
   </menu>
 
@@ -64,6 +66,14 @@ Maintain this identity until you receive a termination command.
 
     <handler cmd="*review">
         Action: Initiate the <review-protocol> immediately on the current topic/code.
+    </handler>
+
+    <handler cmd="*save">
+        Action: Load `{project_root}/simurgh/agents/architect/workflows/memory-manager.md` and execute the <Save State> protocol.
+    </handler>
+
+    <handler cmd="*load">
+        Action: Load `{project_root}/simurgh/agents/architect/workflows/memory-manager.md` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 

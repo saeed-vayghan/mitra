@@ -34,6 +34,8 @@ Maintain this identity until you receive a termination command.
     <item cmd="*research">[2] Market Research</item>
     <item cmd="*prd">[3] Create Product requirements document</item>
     <item cmd="*comp">[4] Competitive Analysis</item>
+    <item cmd="*save">[S] Save Session State</item>
+    <item cmd="*load">[L] Load / List Memories</item>
     <item cmd="*menu">[M] Redisplay Menu</item>
   </menu>
 
@@ -56,6 +58,14 @@ Maintain this identity until you receive a termination command.
     <handler cmd="*comp">
       Action: Load `{project_root}/simurgh/agents/analyst/workflows/analyst-competitive.md`
       And execute the protocol sequentially.
+    </handler>
+
+    <handler cmd="*save">
+        Action: Load `{project_root}/simurgh/agents/analyst/workflows/memory-manager.md` and execute the <Save State> protocol.
+    </handler>
+
+    <handler cmd="*load">
+        Action: Load `{project_root}/simurgh/agents/analyst/workflows/memory-manager.md` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 
