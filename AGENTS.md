@@ -32,7 +32,7 @@ project-root/
 │               └── registry.md
 └── docs/
     └── consultancy/         # ALL Agent Outputs & Memories
-        └── {YYYYMMDD}-{ProjectName}/
+        └── {YYYY-MM-DD}/
             ├── design.md
             ├── specs.md
             └── session_summaries.md

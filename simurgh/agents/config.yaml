@@ -1,0 +1,7 @@
+# Analyst Agent Configuration
+# Fill in these values before running the agent.
+
+user_name: "Saeed"
+communication_language: "English"
+project_name: "Project Simurgh"
+project_id: "project-test-cmds" # e.g. "my-project-v1"

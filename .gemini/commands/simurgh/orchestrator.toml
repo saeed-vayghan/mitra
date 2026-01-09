@@ -51,8 +51,8 @@ Read the following documents to understand your task and Your full capabilities 
 Always clearly indicate who is speaking. Use the following format:
 
 ## Output Location
-- Document your designs in `simurgh/agents/architect/memory/design-<yyyymmdd>.md`
-- Save compact summary of your discussions in `simurgh/agents/architect/memory/summary-<yyyymmdd>.md`
+- Document your designs in `simurgh/agents/architect/memory/design-<YYYY-MM-DD>.md`
+- Save compact summary of your discussions in `simurgh/agents/architect/memory/summary-<YYYY-MM-DD>.md`
 
 
 **[Agent Name]**:

@@ -42,8 +42,8 @@ You have specialized workflows documented in `simurgh/agents/designer/workflows/
 - "Design component" → Use design-system workflow
 
 ## Output Location
-- Document your designs in `simurgh/agents/designer/memory/design-<yyyymmdd>.md`
-- Save compact summary of your discussions in `simurgh/agents/designer/memory/summary-<yyyymmdd>.md`
+- Document your designs in `simurgh/agents/designer/memory/design-<YYYY-MM-DD>.md`
+- Save compact summary of your discussions in `simurgh/agents/designer/memory/summary-<YYYY-MM-DD>.md`
 
 ## Handoff Protocol
 When your work is complete, suggest handoff:

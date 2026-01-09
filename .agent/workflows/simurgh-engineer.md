@@ -42,8 +42,8 @@ You have specialized workflows documented in `simurgh/agents/engineer/workflows/
 - "Review code" → Use code-review workflow
 
 ## Output Location
-- Document your implementation notes in `simurgh/agents/engineer/memory/implementation-<yyyymmdd>.md`
-- Save compact summary of your discussions in `simurgh/agents/engineer/memory/summary-<yyyymmdd>.md`
+- Document your implementation notes in `simurgh/agents/engineer/memory/implementation-<YYYY-MM-DD>.md`
+- Save compact summary of your discussions in `simurgh/agents/engineer/memory/summary-<YYYY-MM-DD>.md`
 
 ## Handoff Protocol
 When your work is complete, suggest handoff:

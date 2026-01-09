@@ -44,4 +44,4 @@ Generate a JSON-structured plan (or markdown table) listing the tasks AFTER PRD 
 ## Rules
 - **Granularity**: Break tasks down until they map to a SINGLE workflow.
 - **Dependencies**: Note if T-2 depends on T-3.
-- **State Update**: Update the Manager's `memory/{YYYYMMDD}-session_latest.json` with these new tasks.
+- **State Update**: Update the Manager's `memory/{YYYY-MM-DD}/session_latest.json` with these new tasks.

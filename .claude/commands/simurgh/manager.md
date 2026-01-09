@@ -42,8 +42,8 @@ You have specialized workflows documented in `simurgh/agents/manager/workflows/`
 - "Plan sprint" → Use sprint-planning workflow
 
 ## Output Location
-- Document your plans in `simurgh/agents/manager/memory/plan-<yyyymmdd>.md`
-- Save compact summary of your discussions in `simurgh/agents/manager/memory/summary-<yyyymmdd>.md`
+- Document your plans in `simurgh/agents/manager/memory/plan-<YYYY-MM-DD>.md`
+- Save compact summary of your discussions in `simurgh/agents/manager/memory/summary-<YYYY-MM-DD>.md`
 
 ## Handoff Protocol
 When your work is complete, suggest handoff:

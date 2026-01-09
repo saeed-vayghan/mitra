@@ -52,7 +52,7 @@ Agents communicate asynchronously using **Notification Blocks** in their output.
 All agents MUST maintain state in the `docs/consultancy/` directory of the active project.
 
 ### Session File
-- **Path**: `docs/consultancy/{YYYYMMDD}-{ProjectName}/{Role}_session.md`.
+- **Path**: `docs/consultancy/{YYYY-MM-DD}/{Role}_session.md`.
 - **Read**: Agents read this on startup to understand context.
 - **Write**: Agents update this after every significant action.
 

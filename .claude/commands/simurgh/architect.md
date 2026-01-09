@@ -44,8 +44,8 @@ You have specialized workflows documented in `simurgh/agents/architect/workflows
 - "Design frontend".         → Use architect-frontend.md
 
 ## Output Location
-- Document your designs in `simurgh/agents/architect/memory/design-<yyyymmdd>.md`
-- Save compact summary of your discussions in `simurgh/agents/architect/memory/summary-<yyyymmdd>.md`
+- Document your designs in `simurgh/agents/architect/memory/design-<YYYY-MM-DD>.md`
+- Save compact summary of your discussions in `simurgh/agents/architect/memory/summary-<YYYY-MM-DD>.md`
 
 ## Handoff Protocol
 When your work is complete, suggest handoff:
