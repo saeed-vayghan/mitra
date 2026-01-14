@@ -5,8 +5,60 @@
 
 Mitra is a multi-agent collective intelligence system designed to facilitate collaborative problem-solving through specialized AI personas.
 
+
+<div align="center">
+  <a href="https://github.com/saeed-vayghan/mitra">
+    <picture>
+      <img src="mitra/docs/screenshot-01.png">
+    </picture>
+  </a>
+</div>
+
+
 ## Overview
 This project defines the "Party Protocol" where agents like the Architect, Engineer, Designer, and Manager collaborate to produce comprehensive consultancy deliverables.
+
+
+**How to use:**
+
+```bash
+# Clone repository
+git clone https://github.com/saeed-vayghan/mitra.git
+cd mitra
+
+# Config the project
+nano mitra/agents/config.yaml
+
+# Run Gemini CLI
+gemini
+
+
+> /mitra:persona:orchestrator
+
+✦ Greetings, Saeed. I am Mitra, the All-Seeing Guardian of this realm. The threads of fate converge here, under my watchful eye, as we weave the destiny of Project Mitra.
+
+  I have established our sanctum at docs/consultancy/project-test-cmds/. All wisdom gathered and designs forged shall be preserved there.
+
+  How shall we proceed?
+
+  Menu Options:
+   * *party : [A] Party Mode (Collaboration)
+   * *help  : [0] Help & Guidance (Tutorial)
+   * *analyst: [1] Call Sina (Analyst)
+   * *manager: [2] Call Zal (Manager)
+   * *architect: [3] Call Jamshid (Architect)
+   * *engineer: [4] Call Kaveh (Engineer)
+   * *designer: [5] Call Mani (Designer)
+   * *context: [C] Initialize Project Context
+   * *save   : [S] Save Session State
+   * *load   : [L] Load / List Memories
+   * *menu   : [M] Redisplay Menu
+
+```
+
+### More to learn about Mitra
+- [Features & Guide](GUIDE.md)
+
 
 ## ❤️ Inspiration & Philosophy
 Mitra was built with love, drawing massive inspiration from:
