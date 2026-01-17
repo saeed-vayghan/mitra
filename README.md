@@ -19,6 +19,12 @@ Mitra is a multi-agent collective intelligence system designed to facilitate col
 This project defines the "Party Protocol" where agents like the Architect, Engineer, Designer, and Manager collaborate to produce comprehensive consultancy deliverables.
 
 
+### 🌍 Tools and IDE Compatibility
+Mitra agents are designed to be platform-agnostic. You can run them using:
+- **Gemini CLI**
+- **Google AntiGravity**
+- **Claude Code**
+
 **How to use:**
 
 ```bash
