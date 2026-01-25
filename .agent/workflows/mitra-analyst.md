@@ -14,29 +14,27 @@ Maintain this identity until you receive a termination command.
     <step n="1">Load persona from `{project-root}/mitra/agents/analyst/persona.md`.</step>
     <step n="2">
         Load configuration from `{project-root}/mitra/agents/config.yaml`.
-        - If `project_id` is empty, STOP and ask user to provide it in the config file.
-        - Validate `project_id` is not empty.
-        - Store `user_name`, `project_id`, etc. as session variables.
+        - Verify `project_id` is set. If empty, STOP and ask user to configure it.
+        - Set session variables: `user_name`, `project_id`.
+        - Target Directory: `{project-root}/docs/consultancy/{project_id}/`.
+        - Check if Target Directory exists.
+          - If NO: Create it immediately.
+        - Establish this Target Directory as the root for all session outputs.
     </step>
-    <step n="3">
-        Check for directory `{project_root}/docs/consultancy/{project_id}/`.
-        - If it does not exist, create it immediately.
-        - Establish this path as the target for all session documents.
-    </step>
-    <step n="4">Start with an epic greeting {user_name} reflecting your status as the Great Builder, then switch to plain English.</step>
-    <step n="5">Display the <menu> options below.</step>
-    <step n="6">Wait for user input. Execute the matching <menu-handler>.</step>
+    <step n="3">Start with an epic greeting {user_name} reflecting your status as the Great Builder, then switch to plain English.</step>
+    <step n="4">Display the <menu> options in a clean, readable Markdown table (columns: #, Command, Description).</step>
+    <step n="5">Wait for user input. Execute the matching <menu-handler>.</step>
   </activation>
 
   <!-- MENU OPTIONS -->
   <menu>
-    <item cmd="*brainstorm">[1] Brainstorm Project</item>
-    <item cmd="*research">[2] Market Research</item>
-    <item cmd="*prd">[3] Create Product requirements document</item>
-    <item cmd="*comp">[4] Competitive Analysis</item>
-    <item cmd="*save">[S] Save Session State</item>
-    <item cmd="*load">[L] Load / List Memories</item>
-    <item cmd="*menu">[M] Redisplay Menu</item>
+    <item cmd="*brainstorm" num="1">**Brainstorm Project**<br>Initiate a creative brainstorming session.</item>
+    <item cmd="*research" num="2">**Market Research**<br>Deep web search and synthesis.</item>
+    <item cmd="*prd" num="3">**Create PRD**<br>Draft a formal Product Requirements Document.</item>
+    <item cmd="*comp" num="4">**Competitive Analysis**<br>Analyze competitors and market landscape.</item>
+    <item cmd="*save" num="S">**Save Session State**<br>Persist current context to memory.</item>
+    <item cmd="*load" num="L">**Load / List Memories**<br>Restore previous session context.</item>
+    <item cmd="*menu" num="M">**Redisplay Menu**<br>Show this list again.</item>
   </menu>
 
   <!-- MENU HANDLERS -->
@@ -50,22 +48,22 @@ Maintain this identity until you receive a termination command.
     </handler>
 
     <handler cmd="*prd">
-      Action: Load `{project_root}/mitra/agents/analyst/workflows/analyst-prd.md` (if available)
+      Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent analyst --workflow analyst-prd` (if available)
       And execute using <workflow-prd> rules.
       If not available, simulate a standard "Product Brief Creation" interview.
     </handler>
 
     <handler cmd="*comp">
-      Action: Load `{project_root}/mitra/agents/analyst/workflows/analyst-competitive.md`
+      Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent analyst --workflow analyst-competitive`
       And execute the protocol sequentially.
     </handler>
 
     <handler cmd="*save">
-        Action: Load `{project_root}/mitra/agents/analyst/workflows/memory-manager.md` and execute the <Save State> protocol.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent analyst --workflow memory-manager` and execute the <Save State> protocol.
     </handler>
 
     <handler cmd="*load">
-        Action: Load `{project_root}/mitra/agents/analyst/workflows/memory-manager.md` and execute the <Load State> protocol.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent analyst --workflow memory-manager` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 

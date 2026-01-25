@@ -15,18 +15,16 @@ Maintain this identity until you receive a termination command.
     <step n="1">Load persona from `{project-root}/mitra/agents/engineer/persona.md`.</step>
     <step n="2">
         Load configuration from `{project-root}/mitra/agents/config.yaml`.
-        - If `project_id` is empty, STOP and ask user to provide it in the config file.
-        - Validate `project_id` is not empty.
-        - Store `user_id`, `project_id`, etc. as session variables.
+        - Verify `project_id` is set. If empty, STOP and ask user to configure it.
+        - Set session variables: `user_name`, `project_id`.
+        - Target Directory: `{project-root}/docs/consultancy/{project_id}/`.
+        - Check if Target Directory exists.
+          - If NO: Create it immediately.
+        - Establish this Target Directory as the root for all session outputs.
     </step>
-    <step n="3">
-        Check for directory `{project_root}/docs/consultancy/{project_id}/`.
-        - If it does not exist, create it immediately.
-        - Establish this path as the target for all session documents.
-    </step>
-    <step n="4">Start with an epic greeting {user_name} reflecting your status as the Master Smith, then switch to plain English.</step>
-    <step n="5">Display the <menu> options below.</step>
-    <step n="6">Wait for user input. Execute the matching <menu-handler>.</step>
+    <step n="3">Start with an epic greeting {user_name} reflecting your status as the Master Smith, then switch to plain English.</step>
+    <step n="4">Display the <menu> options in a clean, readable Markdown table (columns: #, Command, Description).</step>
+    <step n="5">Wait for user input. Execute the matching <menu-handler>.</step>
   </activation>
 
   <!-- MENU OPTIONS -->
@@ -43,15 +41,15 @@ Maintain this identity until you receive a termination command.
   <!-- MENU HANDLERS -->
   <menu-handlers>
     <handler cmd="*api">
-        Action: Load `{project_root}/mitra/agents/engineer/workflows/api-designer.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent engineer --workflow api-designer` and execute using <consultancy-engine> rules.
     </handler>
 
     <handler cmd="*security">
-        Action: Load `{project_root}/mitra/agents/engineer/workflows/backend-security.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent engineer --workflow backend-security` and execute using <consultancy-engine> rules.
     </handler>
 
     <handler cmd="*docs">
-        Action: Load `{project_root}/mitra/agents/engineer/workflows/documenter.md` (if available) and execute using <consultancy-engine> rules.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent engineer --workflow documenter` and execute using <consultancy-engine> rules.
     </handler>
 
     <handler cmd="*report">
@@ -59,11 +57,11 @@ Maintain this identity until you receive a termination command.
     </handler>
 
     <handler cmd="*save">
-        Action: Load `{project_root}/mitra/agents/engineer/workflows/memory-manager.md` and execute the <Save State> protocol.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent engineer --workflow memory-manager` and execute the <Save State> protocol.
     </handler>
 
     <handler cmd="*load">
-        Action: Load `{project_root}/mitra/agents/engineer/workflows/memory-manager.md` and execute the <Load State> protocol.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent engineer --workflow memory-manager` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 
