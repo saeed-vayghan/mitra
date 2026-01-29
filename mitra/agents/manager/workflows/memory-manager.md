@@ -15,7 +15,12 @@ This workflow enables the Manager to save and restore rich session state, includ
     -   `artifacts`: Scan `docs/consultancy/{project_id}/` for any files created/modified in this session.
     -   `key_decisions`: List explicit user choices (e.g., "Sprint: 2 weeks", "Focus: MVP").
     -   `next_steps`: 2-3 actionable bullet points for the next session.
-2.  **Generate Filename**: Create a name pattern: `state-{YYYY-MM-DD}-{topic-slug}.json`.
+2.  **Generate Filename**:
+    - Pattern: `<main-name>-<version>-<date>.json`
+    - `main-name`: `agent-manager-state`
+    - `version`: Two digits starting with `01`. Increment if today's file exists (e.g., `01`, `02`).
+    - `date`: `YYYY-MM-DD`
+    - Example: `agent-manager-state-01-2026-01-29.json`
 3.  **Construct JSON**:
     ```json
     {

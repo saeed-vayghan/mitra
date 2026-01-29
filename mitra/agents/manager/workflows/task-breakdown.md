@@ -25,7 +25,7 @@ Execute the following steps sequentially. Obtain user confirmation after each ma
 - **Action**: Create a card for each task.
     - **Title**: Actionable verb (e.g., "Design...", "Spec...", "Map...").
     - **Description**: Link to requirements.
-    - **Deliverable**: Exact filename or artifact expected.
+    - **Deliverable**: Filename following pattern `<kebab-case-name>-<version>-<date>.<ext>` (e.g., `design-login-mockup-01-2026-01-29.svg`).
 
 ### 4. Output Generation
 - **Deliverable**: A markdown table of tickets in `docs/consultancy/{project_id}/`.

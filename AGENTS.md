@@ -53,6 +53,13 @@ When adding a capability or fixing a bug in an agent's logic:
     ```
 -   **Rule**: Never modify the `memory-manager.md` logic without testing the JSON read/write cycle.
 
+## [!IMPORTANT] **MANDATORY MEMORY PROTOCOL**
+When a user asks to "save state", "persist context", or "remember this", you **MUST** execute the `memory-manager` workflow defined in your `.toml` or `.agent` file.
+- **DO NOT** create ad-hoc markdown files like `MEMORY.md`.
+- **DO NOT** summarize in chat only.
+- **YOU MUST** run the tool/script that generates the JSON state file.
+*Failure to follow this protocol breaks the 'Time Travel' capability of the system.*
+
 ## ✅ Verification Checklist
 
 Before confirming a task is complete, ensure:

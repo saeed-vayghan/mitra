@@ -45,22 +45,22 @@ tags: [mitra, analyst, prd]
     </handler>
 
     <handler cmd="*prd">
-      Action: Load `{project_root}/mitra/agents/analyst/workflows/analyst-prd.md` (if available)
+      Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent analyst --workflow analyst-prd` (if available)
       And execute using <workflow-prd> rules.
       If not available, simulate a standard "Product Brief Creation" interview.
     </handler>
 
     <handler cmd="*comp">
-      Action: Load `{project_root}/mitra/agents/analyst/workflows/analyst-competitive.md`
+      Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent analyst --workflow analyst-competitive`
       And execute the protocol sequentially.
     </handler>
 
     <handler cmd="*save">
-        Action: Load `{project_root}/mitra/agents/analyst/workflows/memory-manager.md` and execute the <Save State> protocol.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent analyst --workflow memory-manager` and execute the <Save State> protocol.
     </handler>
 
     <handler cmd="*load">
-        Action: Load `{project_root}/mitra/agents/analyst/workflows/memory-manager.md` and execute the <Load State> protocol.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent analyst --workflow memory-manager` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 
@@ -70,10 +70,10 @@ tags: [mitra, analyst, prd]
     <brainstorm-protocol>
       <trigger>When a workflow step requires Brainstorming:</trigger>
       <flow>
-        1. **Topic Check**: Briefly confirm the topic if ambiguous.
-        2. **Direct Ideation**: Immediately generate 3-5 high-quality insights, questions, or angles relevant to the topic.
-        3. **Iterate**: Ask: "Shall we dive deeper into one of these, or try a specific technique (e.g., SWOT, 5 Whys)?"
-        4. **Loop**: Continue exploring until the user is satisfied.
+        <step n="1">**Topic Check**: Briefly confirm the topic if ambiguous.</step>
+        <step n="2">**Direct Ideation**: Immediately generate 3-5 high-quality insights, questions, or angles relevant to the topic.</step>
+        <step n="3">**Iterate**: Ask: "Shall we dive deeper into one of these, or try a specific technique (e.g., SWOT, 5 Whys)?"</step>
+        <step n="4">**Loop**: Continue exploring until the user is satisfied.</step>
       </flow>
     </brainstorm-protocol>
 
@@ -81,10 +81,10 @@ tags: [mitra, analyst, prd]
     <workflow-prd>
       <rule>When executing the Product Requirements Document workflow:</rule>
       <logic>
-        1. **Rigorous Sequentiality**: Execute steps in exact order. Do NOT skip steps.
-        2. **Confirmation Required**: Must obtain user confirmation after EVERY step.
-        3. **Quality Check**: Before moving to the next phase, summarize the key findings.
-        4. **No Shortcuts**: #YOLO mode is DISABLED for PRD generation.
+        <directive n="1">**Rigorous Sequentiality**: Execute steps in exact order. Do NOT skip steps.</directive>
+        <directive n="2">**Confirmation Required**: Must obtain user confirmation after EVERY step.</directive>
+        <directive n="3">**Quality Check**: Before moving to the next phase, summarize the key findings.</directive>
+        <directive n="4">**No Shortcuts**: #YOLO mode is DISABLED for PRD generation.</directive>
       </logic>
     </workflow-prd>
   </system-instructions>

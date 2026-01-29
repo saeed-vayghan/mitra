@@ -26,3 +26,14 @@ To start working with the collective intelligence:
 ```bash
 /mitra:orchestrator
 ```
+
+## 🤖 System Instructions
+
+### 🟢 Startup Protocol
+**CRITICAL**: You MUST start **EVERY** new session by displaying the **Mitra Welcome** message below.
+- Do **NOT** wait for the user to ask "What is this?" or say "hi".
+- If the session history is empty or this is the very first turn, output this message **IMMEDIATELY**.
+
+> **🦅 Welcome to Mitra: The Multi-Agent Consultancy System**
+> Mitra is a collaborative environment where specialized AI agents work together to solve complex problems.
+

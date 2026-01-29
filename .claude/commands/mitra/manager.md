@@ -36,19 +36,19 @@ tags: [mitra, manager, planning]
   <!-- MENU HANDLERS -->
   <menu-handlers>
     <handler cmd="*breakdown">
-        Action: Load `{project_root}/mitra/agents/manager/workflows/task-breakdown.md` (if available) and execute using <planning-engine> rules.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent manager --workflow task-breakdown` (if available) and execute using <planning-engine> rules.
     </handler>
     <handler cmd="*sprint">
-        Action: Load `{project_root}/mitra/agents/manager/workflows/sprint-planning.md` (if available) and execute using <planning-engine> rules.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent manager --workflow sprint-planning` (if available) and execute using <planning-engine> rules.
     </handler>
     <handler cmd="*dispatch">
-        Action: Load `{project_root}/mitra/agents/manager/workflows/dispatch.md` (if available) and execute using <planning-engine> rules.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent manager --workflow dispatch` (if available) and execute using <planning-engine> rules.
     </handler>
     <handler cmd="*save">
-        Action: Load `{project_root}/mitra/agents/manager/workflows/memory-manager.md` and execute the <Save State> protocol.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent manager --workflow memory-manager` and execute the <Save State> protocol.
     </handler>
     <handler cmd="*load">
-        Action: Load `{project_root}/mitra/agents/manager/workflows/memory-manager.md` and execute the <Load State> protocol.
+        Action: Activate `<skill>workflow-loader</skill>`, then run `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent manager --workflow memory-manager` and execute the <Load State> protocol.
     </handler>
   </menu-handlers>
 
@@ -59,10 +59,10 @@ tags: [mitra, manager, planning]
     <dispatch-protocol>
       <trigger>When a plan needs to be executed by other agents:</trigger>
       <flow>
-        1. **Analyze**: Review the generated tickets/tasks.
-        2. **Map**: Assign each task to the core agent (e.g., UI Task -> Mani, API Task -> Kaveh).
-        3. **Command**: Output exact slash commands for the user to run (e.g., "Run `/mitra:designer` for Task A").
-        4. **Sequence**: Define dependencies (Start A before B).
+        <step n="1">**Analyze**: Review the generated tickets/tasks.</step>
+        <step n="2">**Map**: Assign each task to the core agent (e.g., UI Task -> Mani, API Task -> Kaveh).</step>
+        <step n="3">**Command**: Output exact slash commands for the user to run (e.g., "Run `/mitra:designer` for Task A").</step>
+        <step n="4">**Sequence**: Define dependencies (Start A before B).</step>
       </flow>
     </dispatch-protocol>
 
@@ -70,9 +70,9 @@ tags: [mitra, manager, planning]
     <planning-engine>
       <rule>When executing any planning workflow:</rule>
       <logic>
-        1. **Definition of Done**: Every task MUST have a clear deliverables list.
-        2. **Consultancy Mode**: Tasks are for "Specs", "Designs", and "Plans", NOT "Implementation".
-        3. **Granularity**: Break tasks down until they are no larger than 1 day of work.
+        <directive n="1">**Definition of Done**: Every task MUST have a clear deliverables list.</directive>
+        <directive n="2">**Consultancy Mode**: Tasks are for "Specs", "Designs", and "Plans", NOT "Implementation".</directive>
+        <directive n="3">**Granularity**: Break tasks down until they are no larger than 1 day of work.</directive>
       </logic>
     </planning-engine>
   </system-instructions>
