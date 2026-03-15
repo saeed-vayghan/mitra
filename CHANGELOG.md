@@ -41,7 +41,6 @@ Version 2.0.0 introduces a comprehensive overhaul of the agent architecture, est
 
 ### ⚠️ Deprecated / Removed
 
--   **Ad-Hoc Coding**: Agents no longer attempt to write implementation code (e.g., Python/JS files) directly. They purely output consultancy artifacts.
 -   **Legacy Configs**: Removed standalone/divergent configuration files that did not match the `.agent` XML definitions.
 -   **Git Awareness**: Removed direct Git operation commands from agent personas; agents now rely on the user for version control.
 

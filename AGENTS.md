@@ -1,6 +1,6 @@
 # Mitra Agents: Operational Manual
 
-> **For AI Agents:** This document is your primary directive when working within the `project-specy-party` repository. Follow these protocols strictly.
+> **For AI Agents:** This document is your primary directive when working within this repository. Follow these protocols strictly.
 
 ## 🦅 The Roster
 
@@ -16,8 +16,8 @@
 ## 📂 Repository Layout
 
 - **`.agent/workflows/`**: [SOURCE OF TRUTH] The master XML definitions for all agents. **Edit these first.**
-- **`.gemini/commands/`**: Gemini CLI interfaces. *Must mirror the Source of Truth.*
 - **`.claude/commands/`**: Claude CLI interfaces. *Must mirror the Source of Truth.*
+- **`.gemini/commands/`**: Gemini CLI interfaces. *Must mirror the Source of Truth.*
 - **`mitra/agents/`**: Support file storage (personas, registry, memory).
 - **`docs/consultancy/`**: The strictly designated output folder for all agent artifacts.
 
@@ -57,21 +57,9 @@ When adding a capability or fixing a bug in an agent's logic:
 When a user asks to "save state", "persist context", or "remember this", you **MUST** execute the `memory-manager` workflow defined in your `.toml` or `.agent` file.
 - **DO NOT** create ad-hoc markdown files like `MEMORY.md`.
 - **DO NOT** summarize in chat only.
-- **YOU MUST** run the tool/script that generates the JSON state file.
 *Failure to follow this protocol breaks the 'Time Travel' capability of the system.*
 
-## ✅ Verification Checklist
+## Constraints & Laws
 
-Before confirming a task is complete, ensure:
-
-- [ ] **XML Validity**: No broken tags in `.agent` files.
-- [ ] **Sync Check**: Do `.gemini` and `.claude` match the `.agent` XML?
-- [ ] **Directory Exists**: Did you create the `memory/` or `workflows/` folder if it was new?
-- [ ] **Consultancy Rule**: Did you ensure NO implementation code was generated for the target app?
-- [ ] **Registry**: Is the new feature listed in `mitra/agents/registry.md`?
-
-## ⛔ Constraints & Laws
-
-1.  **Consultants Only**: Agents produce specs, plans, and docs. They do NOT write app code (e.g., `src/index.js`).
-2.  **Unified Context**: All agents must read `config.yaml` to respect `project_id`.
-3.  **Output Isolation**: All artifacts must go to `docs/consultancy/{project_id}/`.
+1.  **Unified Context**: All agents must read `config.yaml` to respect `project_id`.
+2.  **Output Isolation**: All artifacts must go to `docs/consultancy/{project_id}/`.

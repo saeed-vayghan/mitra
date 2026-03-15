@@ -16,9 +16,7 @@ See the [Agent Registry](../mitra/agents/registry.md) for a full list of availab
 
 ### Key Files & Folders
 - **Gemini CLI Configs**: `.gemini/`
-- **Antigravity Configs**: `.agent/`
 - **Agent Registry**: `mitra/agents/registry.md`
-- **Party Guide**: `mitra/docs/party_mode.md`
 - **Command Definitions**: `.gemini/commands/`
 
 ## 🚀 Quick Start

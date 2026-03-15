@@ -15,9 +15,9 @@ See the [Agent Registry](../mitra/agents/registry.md) for a full list of availab
 - **Consultancy Mode**: Agents provide high-level strategy and specs, not direct implementation code.
 
 ### Key Files & Folders
-- **Claude Code Configs**: `.claude/`
+- **Antigravity Configs**: `.agent/`
 - **Agent Registry**: `mitra/agents/registry.md`
-- **Command Definitions**: `.claude/commands/`
+- **Command Definitions**: `.agent/commands/`
 
 ## 🚀 Quick Start
 To start working with the collective intelligence:
@@ -34,3 +34,4 @@ To start working with the collective intelligence:
 
 > **🦅 Welcome to Mitra: The Multi-Agent Consultancy System**
 > Mitra is a collaborative environment where specialized AI agents work together to solve complex problems.
+
