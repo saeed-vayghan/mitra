@@ -5,7 +5,7 @@ description: Provides robust mechanisms for agents to dynamically load and execu
 
 # Workflow Loader Skill
 
-This skill provides the capability for any Gemini Agent to robustly load, read, and execute external workflow files defined in the `mitra/agents/{agent}/workflows/` directory.
+This skill provides the capability for any Claude Agent to robustly load, read, and execute external workflow files defined in the `mitra/agents/{agent}/workflows/` directory.
 
 ## 🛑 The Problem
 By default, an instruction like "Action: Load backend.md" is ambiguous. The LLM might:
@@ -23,18 +23,18 @@ When a user asks "What can you do?" or you need to see available modules for an 
 
 Run:
 ```bash
-./.gemini/skills/workflow-loader/scripts/list_workflows.sh --agent {agent_name}
+./.claude/skills/workflow-loader/scripts/list_workflows.sh --agent {agent_name}
 ```
-*Example: `./.gemini/skills/workflow-loader/scripts/list_workflows.sh --agent architect`*
+*Example: `./.claude/skills/workflow-loader/scripts/list_workflows.sh --agent architect`*
 
 ### 2. Loading a Workflow
 When you trigger a menu handler (e.g., `*backend`) or need to execute a specific process:
 
 Run:
 ```bash
-./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent {agent_name} --workflow {workflow_name}
+./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent {agent_name} --workflow {workflow_name}
 ```
-*Example: `./.gemini/skills/workflow-loader/scripts/load_workflow.sh --agent architect --workflow backend`*
+*Example: `./.claude/skills/workflow-loader/scripts/load_workflow.sh --agent architect --workflow backend`*
 
 ### 3. Execution Protocol
 Once the content is loaded (printed to your context):
