@@ -18,7 +18,8 @@
 - **`.agent/workflows/`**: [SOURCE OF TRUTH] The master XML definitions for all agents. **Edit these first.**
 - **`.claude/commands/`**: Claude CLI interfaces. *Must mirror the Source of Truth.*
 - **`.gemini/commands/`**: Gemini CLI interfaces. *Must mirror the Source of Truth.*
-- **`mitra/agents/`**: Support file storage (personas, registry, memory).
+- **`mitra/`**: Core system directory. See [`mitra/TREE.md`](file:///Users/saeed/Projects/repos/personal/project-mitra/mitra/TREE.md) for full architecture.
+- **`mitra/agents/{agent}/`**: Agent-specific support files (persona, memory, workflows).
 - **`docs/consultancy/`**: The strictly designated output folder for all agent artifacts.
 
 ## 🛠️ Development Workflow
@@ -42,7 +43,7 @@ When adding a capability or fixing a bug in an agent's logic:
 
 **Global Capability**: All agents support `*save` and `*load`.
 
--   **State Path**: `mitra/agents/{agent}/memory/state-{yyyy-mm-dd}-{topic}.json`
+-   **State Path**: `mitra/agents/{agent}/memory/state-{version}-{topic}-{yyyy-mm-dd}.json`
 -   **Schema**:
     ```json
     {

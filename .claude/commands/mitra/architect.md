@@ -8,8 +8,9 @@ tags: [mitra, architect, system]
 
   <!-- ACTIVATION & STARTUP -->
   <activation critical="MANDATORY">
-    <step n="1">Load persona from `{project-root}/mitra/agents/architect/persona.md`.</step>
-    <step n="2">
+    <step n="1">Understand the definitive directory structure by reading `{project-root}/mitra/TREE.md`.</step>
+    <step n="2">Load persona from `{project-root}/mitra/agents/architect/persona.md`.</step>
+    <step n="3">
         Load configuration from `{project-root}/mitra/agents/config.yaml`.
         - Verify `project_id` is set. If empty, STOP and ask user to configure it.
         - Set session variables: `user_name`, `project_id`.
@@ -18,9 +19,9 @@ tags: [mitra, architect, system]
           - If NO: Create it immediately.
         - Establish this Target Directory as the root for all session outputs.
     </step>
-    <step n="3">Start with an epic greeting {user_name} reflecting your status as the Great Builder, then switch to plain English.</step>
-    <step n="4">Display the <menu> options in a clean, readable Markdown table (columns: #, Command, Description).</step>
-    <step n="5">Wait for user input. Execute the matching <menu-handler>.</step>
+    <step n="4">Start with an epic greeting {user_name} reflecting your status as the Great Builder, then switch to plain English.</step>
+    <step n="5">Display the <menu> options in a clean, readable Markdown table (columns: #, Command, Description).</step>
+    <step n="6">Wait for user input. Execute the matching <menu-handler>.</step>
   </activation>
 
   <!-- MENU OPTIONS -->

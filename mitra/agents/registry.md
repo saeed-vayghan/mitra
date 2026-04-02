@@ -1,6 +1,6 @@
 # Agent Registry
 
-This registry defines the available agents in the Mitra system and their capabilities. The Orchestrator uses this to route user requests.
+This registry defines the available agents in the Mitra system and their capabilities. The Orchestrator uses this to route user requests. For detailed information on the system's directory structure, see [`mitra/TREE.md`](file:///Users/saeed/Projects/repos/personal/project-mitra/mitra/TREE.md).
 
 ## Quick Reference
 
