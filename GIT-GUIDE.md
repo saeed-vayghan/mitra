@@ -27,18 +27,18 @@ git remote add origin https://github.com/your-username/my-awesome-software.git
 
 **4. Push the whole starting framework to your separate repo:**
 ```bash
-git push -u origin main
+git push -u origin master
 ```
 *(Now your separate server has an exact copy of the `mitra` framework, ready for your custom software additions.)*
 
 #### Day-to-Day Workflow with Multiple Remotes:
 
-*   **When developing your software:** Write code, tweak Mitra configs, commit, and run `git push origin main`. This pushes your software and any changes you made to Mitra's configs safely to your separate repo.
+*   **When developing your software:** Write code, tweak Mitra configs, commit, and run `git push origin master`. This pushes your software and any changes you made to Mitra's configs safely to your separate repo.
 *   **When the author updates Mitra:** 
     ```bash
     git pull upstream main
     ```
-    This fetches the latest framework updates from the author and merges them into your project. If the author updated a file that you *also* modified, Git will prompt you to resolve the conflict. Once resolved, you just commit and `git push origin main` to save the updated framework + your software to your remote.
+    This fetches the latest framework updates from the author and merges them into your project. If the author updated a file that you *also* modified, Git will prompt you to resolve the conflict. Once resolved, you just commit and `git push origin master` to save the updated framework + your software to your remote.
 
 ---
 
@@ -57,10 +57,10 @@ git remote add origin <YOUR_NEW_REPO_URL>
 ```bash
 git submodule add https://github.com/saeed-vayghan/mitra.git mitra-framework
 git commit -m "Added Mitra framework as a submodule"
-git push -u origin main
+git push -u origin master
 ```
 
 #### Day-to-Day Workflow with Submodules:
 *   Your main repository (`origin`) only tracks a "pointer" to a specific version of Mitra.
-*   If you need to pull the author's latest Mitra updates, you `cd mitra-framework`, run `git pull origin main`, then go back to the parent folder and commit the updated "pointer".
+*   If you need to pull the author's latest Mitra updates, you `cd mitra-framework`, run `git pull origin master`, then go back to the parent folder and commit the updated "pointer".
 *   **Downside for your use case:** If you modify Mitra's configurations *inside* the submodule folder, you cannot push those changes to *your* remote. You would have to push them to a fork of `mitra`.
