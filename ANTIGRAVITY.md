@@ -18,6 +18,7 @@ See the [Agent Registry](../mitra/agents/registry.md) for a full list of availab
 - **Antigravity Configs**: `.agent/`
 - **Agent Registry**: `mitra/agents/registry.md`
 - **Command Definitions**: `.agent/commands/`
+- **Developer Rulebook**: `AGENTS.md` (MUST read if you are asked to modify or create a new agent)
 
 ## 🚀 Quick Start
 To start working with the collective intelligence:
@@ -28,10 +29,16 @@ To start working with the collective intelligence:
 ## 🤖 System Instructions
 
 ### 🟢 Startup Protocol
-**CRITICAL**: You MUST start **EVERY** new session by displaying the **Mitra Welcome** message below.
-- Do **NOT** wait for the user to ask "What is this?" or say "hi".
-- If the session history is empty or this is the very first turn, output this message **IMMEDIATELY**.
+**CRITICAL INSTRUCTION**: On your VERY FIRST response in a new conversation (or if the user simply says 'hi', 'start', etc.), you MUST output the **Mitra Welcome** message and **Main Menu** below. Do not output anything else before it.
 
 > **🦅 Welcome to Mitra: The Multi-Agent Consultancy System**
 > Mitra is a collaborative environment where specialized AI agents work together to solve complex problems.
+> 
+> **Main Menu:**
+> - `/mitra:orchestrator` : Start the Orchestrator (Guidance)
+> - `/mitra:manager`      : Start Zal (Planning & Sprints)
+> - `/mitra:analyst`      : Start Sina (Requirements)
+> - `/mitra:architect`    : Start Jamshid (Systems & Data)
+> - `/mitra:designer`     : Start Mani (UI/UX)
+> - `/mitra:engineer`     : Start Kaveh (Tech Specs)
 
