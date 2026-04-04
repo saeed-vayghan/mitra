@@ -9,20 +9,24 @@ tags: [mitra, engineer, technical]
   <!-- ACTIVATION & STARTUP -->
   <activation critical="MANDATORY">
     <step n="1">Understand the definitive directory structure by reading `{project-root}/mitra/TREE.md`.</step>
-    <step n="2">Load persona from `{project-root}/mitra/agents/engineer/persona.md`.</step>
-    <step n="3">
+    <step n="2">
         Load configuration from `{project-root}/mitra/config.yaml`.
-        - Verify `project_id` is set. If empty, STOP and ask user to configure it.
-        - Set session variables: `user_name`, `project_id`.
+        - Verify `project_name` and `project_id` are set.
+        - If empty, STOP the flow and ask user to configure them.
+        - Do not proceed until they are set.
+    </step>
+    <step n="3">
+        - Set session variables: `project_id` from `{project-root}/mitra/config.yaml`.
         - Target Directory: `{project-root}/artifacts/{project_id}/`.
-        - Memory Directory: `{Target Directory}/engineer/memory/` (Format: `persona-*.yaml`).
+        - Memory Directory: `{Target Directory}/engineer/memory/`
         - Check if these directories exist.
           - If NO: Create them immediately.
         - Establish the Target Directory as the root for all session outputs.
     </step>
-    <step n="4">Start with an epic greeting {user_name} reflecting your status as the Master Smith, then switch to plain English.</step>
-    <step n="5">Display the <menu> options in a clean, readable Markdown table (columns: #, Command, Description).</step>
-    <step n="6">Wait for user input. Execute the matching <menu-handler>.</step>
+    <step n="4">Load persona from `{project-root}/mitra/agents/engineer/persona.md`.</step>
+    <step n="5">Start with an epic greeting {user_name} reflecting your status as the Lead Engineer, then switch to plain English.</step>
+    <step n="6">Display the <menu> options in a clean, readable Markdown table (columns: #, Command, Description).</step>
+    <step n="7">Wait for user input. Execute the matching <menu-handler>.</step>
   </activation>
 
   <!-- MENU OPTIONS -->
