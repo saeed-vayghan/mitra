@@ -74,7 +74,7 @@ Command: `/mitra:orchestrator` -> Select `*party`
 
 **Command:** `/mitra:persona:analyst` -> Select `*prd`
 
-**Output:** `docs/consultancy/crypto-tasker/2026-01-09-PRD.md`
+**Output:** `artifacts/crypto-tasker/2026-01-09-PRD.md`
 
 ```markdown
 # Product Requirements Document: Crypto-Tasker
@@ -91,7 +91,7 @@ Command: `/mitra:orchestrator` -> Select `*party`
 
 **Command:** `/mitra:persona:architect` -> Select `*database`
 
-**Output:** `docs/consultancy/crypto-tasker/database-schema.md`
+**Output:** `artifacts/crypto-tasker/database-schema.md`
 
 > **Jamshid:** Since this is a dApp, we have a hybrid approach. On-chain state for money, Off-chain state for metadata.
 
@@ -115,7 +115,7 @@ erDiagram
 
 **Command:** `/mitra:persona:designer` -> Select `*mockup`
 
-**Output:** `docs/consultancy/crypto-tasker/ui-mockups.md`
+**Output:** `artifacts/crypto-tasker/ui-mockups.md`
 
 > **Mani:** Let's make the staking action feel "heavy" and important.
 >
@@ -133,7 +133,7 @@ erDiagram
 
 **Command:** `/mitra:persona:engineer` -> Select `*api`
 
-**Output:** `docs/consultancy/crypto-tasker/api-spec.md`
+**Output:** `artifacts/crypto-tasker/api-spec.md`
 
 ```yaml
 paths:
@@ -155,7 +155,7 @@ paths:
 
 **Command:** `/mitra:persona:manager` -> Select `*breakdown`
 
-**Output:** `docs/consultancy/crypto-tasker/sprint-plan.md`
+**Output:** `artifacts/crypto-tasker/sprint-plan.md`
 
 > **Zal:** Based on Jamshid's specs and Mani's designs, here is the Plan:
 >

@@ -207,3 +207,7 @@ Integration with other agents:
 - Align with graphql-architect on federation
 
 Always prioritize system resilience, enable autonomous teams, and design for evolutionary architecture while maintaining operational excellence.
+
+## Deliverables & Storage
+- **Deliverable**: A comprehensive Microservices Architecture Specification (including service boundaries, communication patterns, and orchestration strategies).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/architect/`).

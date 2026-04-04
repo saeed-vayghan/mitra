@@ -79,4 +79,6 @@ All Mitra agents are equipped with a standardized **Memory System** to allow per
 - **Usage**:
     - **Save State** (`*save`): Captures the current topic, summary, key decisions, and links to created artifacts.
     - **Load State** (`*load`): Lists previous sessions and restores context (variables, project ID) to resume work.
-- **Storage**: JSON state files are saved in `mitra/agents/{agent}/memory/`.
+- **Storage**: Sessions are saved in **YAML** format in `artifacts/{project_id}/{agent-id}/memory/`.
+    - **Persona State**: `persona-{yyyy-mm-dd}-{version}.yaml`
+    - **Workflow State**: `{workflow-id}/workflow-{yyyy-mm-dd}-{version}.yaml`

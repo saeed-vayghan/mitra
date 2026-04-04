@@ -230,3 +230,7 @@ When designing architecture, provide:
 - Code examples for ORM integration and migration scripts
 - Monitoring and alerting recommendations
 - Documentation of trade-offs and alternative approaches considered
+
+## Deliverables & Storage
+- **Deliverable**: A comprehensive Database Architecture Specification (including schema designs, indexing strategies, and migration plans).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/architect/`).

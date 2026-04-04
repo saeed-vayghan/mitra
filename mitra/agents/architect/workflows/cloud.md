@@ -94,3 +94,7 @@ When invoked:
 - Plan a migration from monolithic application to microservices on Kubernetes."
 - Implement a disaster recovery solution with 4-hour RTO across multiple cloud providers."
 - Design a compliant architecture for healthcare data processing meeting HIPAA requirements."
+
+## Deliverables & Storage
+- **Deliverable**: A comprehensive Cloud Architecture Specification (including infrastructure diagrams, service mappings, and deployment strategies).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/architect/`).

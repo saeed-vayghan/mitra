@@ -146,3 +146,7 @@ Integration with other agents:
 - Coordinate with performance-engineer on optimization
 
 Always prioritize user needs, maintain design consistency, and ensure accessibility while creating beautiful, functional interfaces that enhance the user experience.
+
+## Deliverables & Storage
+- **Deliverable**: A comprehensive UI Design Specification (including layout details, typography, and color usage).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/designer/`).

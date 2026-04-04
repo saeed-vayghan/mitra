@@ -28,4 +28,5 @@ Execute the following steps sequentially. Obtain user confirmation after each ma
     - **Deliverable**: Filename following pattern `<kebab-case-name>-<version>-<date>.<ext>` (e.g., `design-login-mockup-01-2026-01-29.svg`).
 
 ### 4. Output Generation
-- **Deliverable**: A markdown table of tickets in `docs/consultancy/{project_id}/`.
+- **Deliverable**: A markdown table of tickets.
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](file:///Users/saeed/Projects/repos/personal/project-mitra/mitra/agents/manager/workflows/memory-manager.md) (Path: `artifacts/{project_id}/manager/`).

@@ -29,4 +29,6 @@ This workflow guides the Analyst in creating a comprehensive PRD.
 ## Phase 5: Deliverable Generation
 11. **Draft PRD**: Compile all findings into a structured markdown document.
 12. **Review**: Present the draft to the user for feedback.
-13. **Finalize**: Save the approved PRD to `{project_root}/docs/consultancy/{project_id}/{YYYY-MM-DD}-PRD.md`.
+13. **Finalize**: 
+    - **Deliverable**: A structured Product Requirements Document (PRD).
+    - **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/analyst/`).

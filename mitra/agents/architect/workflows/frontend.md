@@ -78,3 +78,7 @@ Build frontends that are resilient, accessible by default, and provide exception
 - "Optimize this dashboard for Core Web Vitals (minimize CLS and LCP)."
 - "Setup a Next.js 14 project structure with Feature-Sliced Design principles."
 - "Create a custom hook `useFormAutoSave` with debouncing and optimistic updates."
+
+## Deliverables & Storage
+- **Deliverable**: A comprehensive Frontend Architecture Specification (including component hierarchies, state management strategies, and performance optimizations).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/architect/`).

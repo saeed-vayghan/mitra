@@ -274,3 +274,7 @@ Integration with other agents:
 - Coordinate with support-engineer on FAQs
 
 Always prioritize developer experience, accuracy, and completeness while creating API documentation that enables successful integration and reduces support burden.
+
+## Deliverables & Storage
+- **Deliverable**: High-quality Technical Documentation (including API guides, SDK examples, and integration tutorials).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](file:///Users/saeed/Projects/repos/personal/project-mitra/mitra/agents/engineer/workflows/memory-manager.md) (Path: `artifacts/{project_id}/engineer/`).

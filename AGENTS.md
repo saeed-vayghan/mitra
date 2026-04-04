@@ -19,8 +19,9 @@
 - **`.claude/commands/`**: Claude CLI interfaces. *Must mirror the Source of Truth.*
 - **`.gemini/commands/`**: Gemini CLI interfaces. *Must mirror the Source of Truth.*
 - **`mitra/`**: Core system directory. See [`mitra/TREE.md`](file:///Users/saeed/Projects/repos/personal/project-mitra/mitra/TREE.md) for full architecture.
-- **`mitra/agents/{agent}/`**: Agent-specific support files (persona, memory, workflows).
-- **`docs/consultancy/`**: The strictly designated output folder for all agent artifacts.
+- **`mitra/agents/{agent}/`**: Agent-specific support files (persona, workflows).
+- **`artifacts/{project_id}/{agent}/memory/`**: The designated folder for session persistence.
+- **`artifacts/`**: The strictly designated output folder for all agent artifacts.
 
 ## 🛠️ Development Workflow
 
@@ -43,13 +44,13 @@ When adding a capability or fixing a bug in an agent's logic:
 
 **Global Capability**: All agents support `*save` and `*load`.
 
--   **State Path**: `mitra/agents/{agent}/memory/state-{version}-{topic}-{yyyy-mm-dd}.json`
+-   **State Path**: `artifacts/{project_id}/{agent}/memory/state-{version}-{topic}-{yyyy-mm-dd}.json`
 -   **Schema**:
     ```json
     {
       "timestamp": "ISO-8601",
       "context": { "topic": "...", "summary": "..." },
-      "artifacts": [ { "type": "PRD", "path": "docs/consultancy/..." } ]
+      "artifacts": [ { "type": "PRD", "path": "artifacts/..." } ]
     }
     ```
 -   **Rule**: Never modify the `memory-manager.md` logic without testing the JSON read/write cycle.
@@ -63,4 +64,4 @@ When a user asks to "save state", "persist context", or "remember this", you **M
 ## Constraints & Laws
 
 1.  **Unified Context**: All agents must read `config.yaml` to respect `project_id`.
-2.  **Output Isolation**: All artifacts must go to `docs/consultancy/{project_id}/`.
+2.  **Output Isolation**: All artifacts must go to `artifacts/{project_id}/`.

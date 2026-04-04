@@ -2,6 +2,25 @@
 
 All notable changes to the **Mitra** multi-agent system will be documented in this file.
 
+## [2.1.0] - 2026-04-04
+
+### 📦 Centralized Memory Update
+
+This update relocates all agent session memories from agent-specific directories to a project-isolated structure under `artifacts/`.
+
+### ✨ New Features
+
+-   **Project-Isolated Memory**: Session state files are now stored in `artifacts/{project_id}/{agent_id}/memory/`.
+-   **Clean Agent Dirs**: Removed memory storage from `mitra/agents/` to keep core agent definitions separate from session data.
+
+### 🛠️ Changes
+
+-   **Memory Protocol**: Updated `AGENTS.md` and `TREE.md` with the new State Path pattern.
+-   **Workflow Synchronization**: Updated all 6 `memory-manager` workflows and mirrored CLI configurations (Claude/Gemini).
+-   **Activation Logic**: Enhanced agent startup to automatically create memory subdirectories within the project artifacts folder.
+
+---
+
 ## [2.0.0] - 2026-01-09
 
 ### 🚀 Major Release: The "Memory & Structure" Update
@@ -17,7 +36,7 @@ Version 2.0.0 introduces a comprehensive overhaul of the agent architecture, est
 | **Persistence** | None (Amnesic sessions) | **Memory System** (`*save`/`*load`) |
 | **Scope** | Ambiguous (Some coding) | **Strict Consultancy** (Specs/Plans only) |
 | **Orchestrator** | Routing only | **Routing + Help + Context** |
-| **Storage** | Root or random folders | **Structured**: `docs/consultancy/{project_id}/` |
+| **Storage** | Root or random folders | **Structured**: `artifacts/{project_id}/` |
 
 ### ✨ New Features
 

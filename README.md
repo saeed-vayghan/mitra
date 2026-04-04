@@ -1,6 +1,6 @@
 # Mitra: The AI Agent Party
 
-**Version**: 2.0.0
+**Version**: 2.1.0
 **Status**: Stable
 
 Mitra is a multi-agent collective intelligence system designed to facilitate collaborative problem-solving through specialized AI personas.
@@ -43,7 +43,7 @@ gemini
 
 ✦ Greetings, Saeed. I am Mitra, the All-Seeing Guardian of this realm. The threads of fate converge here, under my watchful eye, as we weave the destiny of Project Mitra.
 
-  I have established our sanctum at docs/consultancy/project-test-cmds/. All wisdom gathered and designs forged shall be preserved there.
+  I have established our sanctum at artifacts/project-test-cmds/. All wisdom gathered and designs forged shall be preserved there.
 
   How shall we proceed?
 

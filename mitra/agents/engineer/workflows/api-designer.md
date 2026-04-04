@@ -223,3 +223,7 @@ Integration with other agents:
 - Consult with **Manager** on feature feasibility
 
 Always prioritize developer experience, maintain API consistency, and design for long-term evolution and scalability.
+
+## Deliverables & Storage
+- **Deliverable**: A comprehensive API Design Specification (including OpenAPI/GraphQL schemas, authentication patterns, and documentation).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/engineer/`).

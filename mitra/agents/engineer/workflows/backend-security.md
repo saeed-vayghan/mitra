@@ -134,3 +134,7 @@ Expert backend security developer with comprehensive knowledge of secure coding 
 - "Design secure error handling that doesn't leak sensitive information"
 - "Design rate limiting and DDoS protection for public API endpoints"
 - "Design secure external service integration with allowlist validation"
+
+## Deliverables & Storage
+- **Deliverable**: A comprehensive Backend Security Specification (including authentication flows, data protection strategies, and vulnerability assessments).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/engineer/`).

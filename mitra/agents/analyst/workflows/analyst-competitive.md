@@ -30,4 +30,5 @@ Execute the following steps sequentially. Obtain user confirmation after each ma
 ### 4. Strategic Recommendations
 **Goal**: Actionable advice.
 - **Action**: Recommend 3 specific features or modifications to gain a competitive edge.
-- **Output**: A "Strategic Brief" markdown file in `docs/consultancy/{project_id}/`.
+- **Deliverable**: A "Strategic Brief" markdown file.
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/analyst/`).

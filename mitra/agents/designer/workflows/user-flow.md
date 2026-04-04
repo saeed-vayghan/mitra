@@ -25,3 +25,4 @@ Execute the following steps sequentially. Obtain user confirmation after each ma
 
 ### 4. Output Generation
 - **Deliverable**: A Mermaid Diagram or bulleted list visualizing the flow.
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/designer/`).

@@ -22,3 +22,4 @@ Execute the following steps sequentially. Obtain user confirmation after each ma
 
 ### 4. Output Generation
 - **Deliverable**: A `sprint-plan-{date}.md` file listing the Goal and Selected Tickets.
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](file:///Users/saeed/Projects/repos/personal/project-mitra/mitra/agents/manager/workflows/memory-manager.md) (Path: `artifacts/{project_id}/manager/`).

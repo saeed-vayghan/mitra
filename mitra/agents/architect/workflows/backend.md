@@ -275,3 +275,7 @@ When designing architecture, provide:
 - Deployment strategy and rollout plan
 - Testing strategy for services and integrations
 - Documentation of trade-offs and alternatives considered
+
+## Deliverables & Storage
+- **Deliverable**: A comprehensive Backend Architecture Specification (including API contracts, diagrams, and strategies).
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/architect/`).

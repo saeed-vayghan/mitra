@@ -27,4 +27,5 @@ Execute the following steps sequentially. Obtain user confirmation after each ma
     - `font-size-xl`
 
 ### 4. Output Generation
-- **Deliverable**: A `design-tokens.json` or `variables.css` file in `docs/consultancy/{project_id}/`.
+- **Deliverable**: A `design-tokens.json` or `variables.css` file.
+- **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/designer/`).

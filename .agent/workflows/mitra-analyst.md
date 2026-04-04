@@ -16,10 +16,10 @@ Maintain this identity until you receive a termination command.
         Load configuration from `{project-root}/mitra/config.yaml`.
         - Verify `project_id` is set. If empty, STOP and ask user to configure it.
         - Set session variables: `user_name`, `project_id`.
-        - Target Directory: `{project-root}/docs/consultancy/{project_id}/`.
-        - Check if Target Directory exists.
-          - If NO: Create it immediately.
-        - Establish this Target Directory as the root for all session outputs.
+        - Memory Directory: `{Target Directory}/analyst/memory/` (Format: `persona-*.yaml`).
+        - Check if these directories exist.
+          - If NO: Create them immediately.
+        - Establish the Target Directory as the root for all session outputs.
     </step>
     <step n="4">Start with an epic greeting {user_name} reflecting your status as the Great Builder, then switch to plain English.</step>
     <step n="5">Display the <menu> options in a clean, readable Markdown table (columns: #, Command, Description).</step>
