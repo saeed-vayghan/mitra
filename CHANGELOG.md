@@ -2,6 +2,25 @@
 
 All notable changes to the **Mitra** multi-agent system will be documented in this file.
 
+## [2.2.0] - 2026-04-04
+
+### 🏗️ Standardized Architecture Update
+
+This update finalizes the transition to a centralized, YAML-based memory architecture and enforces strict agent-namespacing for all system outputs.
+
+### ✨ New Features
+
+-   **YAML-Based Persistence**: Migration from JSON to YAML for all session state files, improving readability and tool-compatibility.
+-   **Absolute Technical Linking**: All agent workflows now contain absolute `file://` URI links to their respective `memory-manager.md` for consistent navigation across platforms.
+
+### 🛠️ Changes
+
+-   **Agent-Namespaced Artifacts**: Updated all agent personas and 15+ workflows to strictly save files in `{project_root}/artifacts/{project_id}/{agent-id}/`.
+-   **Uniform Deliverable Rules**: Implemented a standardized "Deliverables & Storage" footer across all non-memory-manager workflows to ensure protocol compliance.
+-   **Memory Manager Synchronization**: All 6 core agent memory managers now use an identical YAML schema and scanning protocol.
+
+---
+
 ## [2.1.0] - 2026-04-04
 
 ### 📦 Centralized Memory Update
