@@ -13,7 +13,7 @@ Maintain this identity until you receive a termination command.
     <step n="1">Understand the definitive directory structure by reading `{project-root}/mitra/TREE.md`.</step>
     <step n="2">Load persona from `{project-root}/mitra/agents/analyst/persona.md`.</step>
     <step n="3">
-        Load configuration from `{project-root}/mitra/agents/config.yaml`.
+        Load configuration from `{project-root}/mitra/config.yaml`.
         - Verify `project_id` is set. If empty, STOP and ask user to configure it.
         - Set session variables: `user_name`, `project_id`.
         - Target Directory: `{project-root}/docs/consultancy/{project_id}/`.

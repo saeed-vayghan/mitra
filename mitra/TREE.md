@@ -12,14 +12,14 @@ This document defines the definitive directory structure for the Mitra multi-age
 ├── docs/consultancy/       Strictly designated output folder for all agent artifacts.
 │   └── {project_id}/       Project-specific output (e.g., upgrade-agents).
 └── mitra/
+    ├── config.yaml         Global configuration (project_id, user_name).
     ├── TREE.md             [THIS FILE] The definitive structure guide.
     └── agents/             Configuration and data for specialized agents.
-        ├── config.yaml      Global configuration (project_id, user_name).
-        ├── registry.md      Master list of agent capacities and triggers.
-        └── {agent_id}/      Agent-specific directory (e.g., analyst, manager).
-            ├── persona.md   Markdown fragment defining the agent's identity.
-            ├── memory/      JSON files containing rich session state (*save/*load).
-            └── workflows/   Markdown files defining specialized multi-step tasks.
+        ├── registry.md     Master list of agent capacities and triggers.
+        └── {agent_id}/     Agent-specific directory (e.g., analyst, manager).
+            ├── persona.md  Markdown fragment defining the agent's identity.
+            ├── memory/     JSON files containing rich session state (*save/*load).
+            └── workflows/  Markdown files defining specialized multi-step tasks.
 ```
 
 ## 🧠 Memory Protocol

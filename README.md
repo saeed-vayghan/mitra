@@ -33,7 +33,7 @@ git clone https://github.com/saeed-vayghan/mitra.git
 cd mitra
 
 # Config the project
-nano mitra/agents/config.yaml
+nano mitra/config.yaml
 
 # Run Gemini CLI
 gemini

@@ -42,7 +42,7 @@ To demonstrate Mitra's power, let's build **Crypto-Tasker**: *A decentralized to
     cd mitra
 
     # Config the project
-    nano mitra/agents/config.yaml
+    nano mitra/config.yaml
     ```
 
 2.  **Authenticate LLM Access**
