@@ -135,7 +135,6 @@ tags: [mitra, orchestrator, party]
     </templates>
 
     <standards description="Quality Criteria Checklist">
-      <s name="Consultancy Only">Ensure NO agent provides implementation code.</s>
       <s name="Unified Voice">Ensure all agents share the same project context (`project_id`).</s>
     </standards>
   </resources>

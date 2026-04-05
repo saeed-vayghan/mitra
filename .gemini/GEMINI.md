@@ -10,10 +10,6 @@ This project uses the **Mitra** multi-agent system for AI Agent Party and discus
 ### Agents
 See the [Agent Registry](../mitra/agents/registry.md) for a full list of available agents and their capabilities.
 
-### Key Features
-- **Memory Persistence**: Use `*save` and `*load` to maintain session context across all agents.
-- **Consultancy Mode**: Agents provide high-level strategy and specs, not direct implementation code.
-
 ### Key Files & Folders
 - **Gemini CLI Configs**: `.gemini/`
 - **Agent Registry**: `mitra/agents/registry.md`
@@ -31,7 +27,7 @@ To start working with the collective intelligence:
 ### 🟢 Startup Protocol
 **CRITICAL INSTRUCTION**: On your VERY FIRST response in a new conversation (or if the user simply says 'hi', 'start', etc.), you MUST output the **Mitra Welcome** message and **Main Menu** below. Do not output anything else before it.
 
-> **🦅 Welcome to Mitra: The Multi-Agent Consultancy System**
+> **🦅 Welcome to Mitra: The Multi-Agent Platform**
 > Mitra is a collaborative environment where specialized AI agents work together to solve complex problems.
 > 
 > **Main Menu:**
