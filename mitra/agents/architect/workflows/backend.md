@@ -277,5 +277,5 @@ When designing architecture, provide:
 - Documentation of trade-offs and alternatives considered
 
 ## Deliverables & Storage
-- **Deliverable**: A comprehensive Backend Architecture Specification (including API contracts, diagrams, and strategies).
+- **Deliverable**: A complete Backend Implementation Package (including API contracts, source code, database migrations, and deployment manifests).
 - **Storage**: Save to the agent's artifact directory. Follow naming and storage protocols defined in the [Memory Manager](./memory-manager.md) (Path: `artifacts/{project_id}/architect/`).

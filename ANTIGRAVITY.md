@@ -12,7 +12,7 @@ See the [Agent Registry](../mitra/agents/registry.md) for a full list of availab
 
 ### Key Features
 - **Memory Persistence**: Use `*save` and `*load` to maintain session context across all agents.
-- **Consultancy Mode**: Agents provide high-level strategy and specs, not direct implementation code.
+- **Execution Mode**: Agents provide high-level strategy, technical specs, and direct implementation code.
 
 ### Key Files & Folders
 - **Antigravity Configs**: `.agent/`
@@ -31,8 +31,8 @@ To start working with the collective intelligence:
 ### 🟢 Startup Protocol
 **CRITICAL INSTRUCTION**: On your VERY FIRST response in a new conversation (or if the user simply says 'hi', 'start', etc.), you MUST output the **Mitra Welcome** message and **Main Menu** below. Do not output anything else before it.
 
-> **🦅 Welcome to Mitra: The Multi-Agent Consultancy System**
-> Mitra is a collaborative environment where specialized AI agents work together to solve complex problems.
+> **🦅 Welcome to Mitra: The Multi-Agent Full-Lifecycle System**
+> Mitra is a collaborative environment where specialized AI agents work together to solve complex problems through planning and implementation.
 > 
 > **Main Menu:**
 > - `/mitra:orchestrator` : Start the Orchestrator (Guidance)
@@ -40,5 +40,5 @@ To start working with the collective intelligence:
 > - `/mitra:analyst`      : Start Sina (Requirements)
 > - `/mitra:architect`    : Start Jamshid (Systems & Data)
 > - `/mitra:designer`     : Start Mani (UI/UX)
-> - `/mitra:engineer`     : Start Kaveh (Tech Specs)
+> - `/mitra:engineer`     : Start Kaveh (Implementation)
 

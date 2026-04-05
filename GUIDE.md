@@ -1,16 +1,12 @@
 # Mitra Features & User Guide
 
-Welcome to **Mitra**, a multi-agent AI consultancy system. This guide provides a detailed walkthrough of the system's capabilities, using a real-world example project to demonstrate how to leverage the collective intelligence of our agent roster.
+Welcome to **Mitra**, a multi-agent AI full-lifecycle system. This guide provides a detailed walkthrough of the system's capabilities, using a real-world example project to demonstrate how to leverage the collective intelligence of our agent roster for both planning and implementation.
 
 ---
 
 ## 🌟 Core Features
 
-### 1. The Consultancy Model
-**"We Plan, You Build."**
-Mitra agents act as high-level consultants. They produce comprehensive documentation (PRDs, Specs, Plans) but strictly do **not** write implementation code. This ensures you get architectural guidance without the risk of AI generating buggy or unmaintainable code.
-
-### 2. The Agent Roster
+### 1. The Agent Roster
 Six specialized agents ready to tackle different aspects of your project.
 
 | Agent | Icon | Role | Focus |
@@ -22,7 +18,7 @@ Six specialized agents ready to tackle different aspects of your project.
 | **Mani** | 🎨 | Designer | UI/UX, Design Systems |
 | **Kaveh** | ⚡ | Engineer | Specs, Security, APIs |
 
-### 3. Global Memory System
+### 2. Global Memory System
 All agents share a unified memory system.
 -   **`*save`**: Persists your current context, including the topic (`crypto-tasker`), key decisions, and artifacts.
 -   **`*load`**: Instantly restores the session variables so you can pick up exactly where you left off.
@@ -170,6 +166,6 @@ paths:
 ---
 
 ## 📂 Implementation
-Now that you have the **PRD**, **Database Schema**, **UI Mockups**, **API Spec**, and **Sprint Plan**, you can open your IDE and start coding with absolute clarity.
+Now that you have the **PRD**, **Database Schema**, **UI Mockups**, **API Spec**, and **Sprint Plan**, you can proceed to the implementation phase. Mitra agents are equipped to help you write the code, run tests, and refine the product.
 
-Mitra has done the thinking. You do the building.
+Mitra handles the complexity. You lead the vision.

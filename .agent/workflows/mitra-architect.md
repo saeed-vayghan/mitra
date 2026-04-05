@@ -1,5 +1,4 @@
 ---
-name: "mitra-architect (Jamshid)"
 description: "Principal System Architect"
 ---
 

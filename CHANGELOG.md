@@ -1,6 +1,38 @@
 # Changelog
 
 All notable changes to the **Mitra** multi-agent system will be documented in this file.
+    
+## [3.0.0] - 2026-04-04
+
+### 🚀 Major Release: The "Full-Lifecycle" Update
+
+Version 3.0.0 marks the definitive transition of Mitra from a strategy-only consultancy framework into a **Full-Lifecycle Development Platform**. All "Consultancy-Only" and "No-Code" restrictions have been removed.
+
+### 🆚 V2 vs V3 Comparison
+
+| Feature | **V2.0.0 (Consultancy)** | **V3.0.0 (Full-Lifecycle)** |
+| :--- | :--- | :--- |
+| **Philosophy** | **Spec-Driven:** "Align before you build." | **Implementation-First:** "We Plan, We Build." |
+| **Agent Role** | **Strategy & Planning:** Strictly non-coding. | **Execution & Code:** Planning + Direct Development. |
+| **Deliverables** | **Specs & Designs:** Strategy only. | **Production Code:** Filesystem mutation & implementation. |
+| **Engine Type** | **Consultancy Engine:** Reviewer/Planner. | **Implementation Engine:** Builder/Partner. |
+
+### ✨ New Features
+
+-   **Full-Lifecycle Enablement**: Agents are now authorized to generate production-grade code, unit tests, and reference implementations.
+-   **Implementation Engine**: Rebranded core logic from "Consultancy" to "Implementation" to better reflect the new execution-oriented behavior.
+-   **Execution Mode**: Replaced "Consultancy Mode" with "Execution Mode" in all system-wide documentation (`README.md`, `GUIDE.md`, etc.).
+
+### 🛠️ Changes
+
+-   **Persona Refactoring**: Updated all 6 core agent personas to include the new "Execution & Implementation" policy.
+-   **Workflow Synchronization**: Synchronized 20+ workflows across Source XML, Gemini TOML, and Claude MD to remove non-implementation directives.
+-   **Registry Update**: Updated the Agent Registry to reflect development capabilities and implementation focuses.
+
+### ⚠️ Deprecated / Removed
+
+-   **Non-Implementation Policy**: Removed the strict policy forbidding agents from writing implementation code.
+-   **No-Code Directives**: Excised all "No Code" and "No Filesystem Mutation" rules from agent profiles.
 
 ## [2.2.0] - 2026-04-04
 

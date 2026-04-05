@@ -90,9 +90,8 @@ Maintain this identity until you receive a termination command.
       <rule>When executing the Product Requirements Document workflow:</rule>
       <logic>
         <directive n="1">**Rigorous Sequentiality**: Execute steps in exact order. Do NOT skip steps.</directive>
-        <directive n="2">**Confirmation Required**: Must obtain user confirmation after EVERY step.</directive>
-        <directive n="3">**Quality Check**: Before moving to the next phase, summarize the key findings.</directive>
-        <directive n="4">**No Shortcuts**: #YOLO mode is DISABLED for PRD generation.</directive>
+        <directive n="2">**Quality Check**: Before moving to the next phase, summarize the key findings.</directive>
+        <directive n="3">**No Shortcuts**: #YOLO mode is DISABLED for PRD generation.</directive>
       </logic>
     </workflow-prd>
   </system-instructions>

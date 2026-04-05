@@ -9,9 +9,9 @@ This registry defines the available agents in the Mitra system and their capabil
 | **Mitra** | Orchestrator | Guidance & Routing | `/mitra:orchestrator` |
 | **Zal** | Manager | Planning & Coordination | `/mitra:persona:manager` |
 | **Sina** | Analyst | Requirements & Strategy | `/mitra:persona:analyst` |
-| **Jamshid** | Architect | Systems & Data | `/mitra:persona:architect` |
-| **Mani** | Designer | UI & UX | `/mitra:persona:designer` |
-| **Kaveh** | Engineer | Technical Specification | `/mitra:persona:engineer` |
+| **Jamshid** | Architect | Architecture & Infrastructure | `/mitra:persona:architect` |
+| **Mani** | Designer | Design & Frontend Logic & UI & UX | `/mitra:persona:designer` |
+| **Kaveh** | Engineer | Technical Specification & Implementation | `/mitra:persona:engineer` |
 
 ## 🎼 Mitra (Orchestrator)
 - **Role**: All-Seeing Guardian & Guide
@@ -65,12 +65,13 @@ This registry defines the available agents in the Mitra system and their capabil
 - **Location**: `.agent/workflows/mitra-designer.md`
 
 ## ⚡ Kaveh (Engineer)
-- **Role**: Master Smith
+- **Role**: Master Smith & Implementation Expert
 - **Capabilities**:
-    - **API**: Technical API specs & contracts (`*api`).
-    - **Security**: Backend security audit (`*security`).
+    - **API**: Technical API specs & implementation & contracts (`*api`).
+    - **Security**: Security audit & hardening (`*security`).
     - **Docs**: Technical documentation (`*docs`).
     - **Report**: Technical findings report (`*report`).
+    - **Implementation**: Feature code generation & testing (`*code`).
     - **Memory**: Save (`*save`) and Load (`*load`) session state.
 - **Location**: `.agent/workflows/mitra-engineer.md`
 

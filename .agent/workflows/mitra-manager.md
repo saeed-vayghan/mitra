@@ -1,5 +1,4 @@
 ---
-name: "mitra-manager (Zal)"
 description: "Planning & Project Management"
 ---
 

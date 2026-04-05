@@ -16,7 +16,7 @@ Mitra is a multi-agent collective intelligence system designed to facilitate col
 
 
 ## Overview
-This project defines the "Party Protocol" where agents like the Architect, Engineer, Designer, and Manager collaborate to produce comprehensive consultancy deliverables.
+This project defines the "Party Protocol" where agents like the Architect, Engineer, Designer, and Manager collaborate to produce comprehensive technical specifications and direct codebase implementations.
 
 
 ### 🌍 Tools and IDE Compatibility
@@ -132,7 +132,7 @@ We thank these projects for paving the way.
 
 **The "Why"**: While there are many incredible tools for *coding* (Cursor, Copilot, Windsurf), Mitra fulfills the need for a **Scalable Consultant AI Framework**. It is designed to be:
 - **Customizable**: Easy to extend with new agents.
-- **Consultancy-Only**: Focusing entirely on high-level Architecture, Requirements, and Design, leaving the implementation joy to the human.
+- **Full-Lifecycle**: Covering the entire journey from Architecture and Requirements to direct implementation and testing.
 
 ## Learn how to use Mitra
 - [Features & Guide](GUIDE.md)
@@ -146,16 +146,16 @@ We thank these projects for paving the way.
 
 ## 🆚 Comparison with Similar Tools
 
-Mitra stands out by strictly adhering to a **Consultancy Model**, where AI Agents allow *you* to be the implementer while they handle the high-level strategy and specification.
+Mitra stands out by providing an **Implementation-First** experience, where AI Agents partner with you from high-level strategy to direct source code execution.
 
 | Feature | **Mitra** | **BMAD-METHOD** | **OpenSpec** | **GitHub Spec Kit** |
 | :--- | :--- | :--- | :--- | :--- |
-| **Core Philosophy** | **Consultancy-First:** "We Plan, You Build." | **Agile AI-Driven:** "Context-Engineered Development." | **Spec-Driven (SDD):** "Align before you build." | **Spec-Driven (SDD):** "No Vibe Coding." |
-| **Agent Role** | **Consultants:** Strictly non-coding. Strategy & Specs only. | **Implementation:** 19+ agents including Devs/Testers. | **Workflow Guides:** Agnostic agents guided by `AGENTS.md`. | **Task Executors:** Execute "Specify -> Implement" phases. |
+| **Core Philosophy** | **Implementation-First:** "We Plan, We Build." | **Agile AI-Driven:** "Context-Engineered Development." | **Spec-Driven (SDD):** "Align before you build." | **Spec-Driven (SDD):** "No Vibe Coding." |
+| **Agent Role** | **Full-Lifecycle:** Planning + Direct Development. | **Implementation:** 19+ agents including Devs/Testers. | **Workflow Guides:** Agnostic agents guided by `AGENTS.md`. | **Task Executors:** Execute "Specify -> Implement" phases. |
 | **Workflow** | **Party Mode:** Collaborative brainstorming + specialized routing. | **4-Phase:** Analysis -> Planning -> Solutioning -> Implementation. | **Proposal-Based:** Draft -> Review -> Merge Specs. | **Iterative:** Specify -> Plan -> Task -> Implement. |
 | **Memory/State** | **Long-Term JSON:** Explicit `*save`/`*load` of full session context. | **Context Engineering:** Sharding and Codebase flattening. | **File-Based:** `specs/` vs `changes/` folders. | **Living Docs:** `Constitution.md` + evolving Specs. |
 | **Architecture** | **XML Source of Truth:** Synced to Gemini/Claude CLIs. | **Scale-Adaptive:** Quick/Enterprise tracks + Expansion Packs. | **CLI + Slash Commands:** `openspec init`, `/openspec:proposal`. | **Templates + CLI:** `specify` CLI + Pre-built templates. |
 | **Key Differentiator** | **Human-in-the-Loop Implementation:** AI handles 100% of thinking. | **End-to-End Automation:** Agents handle code, tests, and flattening. | **Change Management:** Explicit proposal/archive lifecycle. | **Principles-First:** `Constitution.md` governs all decisions. |
 
 ### Why Mitra?
-Choose Mitra if you want the **intelligence** of a Principle Architect and Manager but prefer to maintain full control over the **code implementation** yourself. It is designed to augment your decision-making, not replace your coding joy.
+Choose Mitra if you want the **intelligence** of a Principal Architect and Manager combined with the **execution power** of a Senior Engineer. It is designed to augment your workflow by handling both the thinking and the doing, providing a cohesive bridge between strategy and production code.
