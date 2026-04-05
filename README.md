@@ -1,6 +1,6 @@
 # Mitra: The AI Agent Party
 
-**Version**: 2.1.0
+**Version**: 3.0.0
 **Status**: Stable
 
 Mitra is a multi-agent collective intelligence system designed to facilitate collaborative problem-solving through specialized AI personas.
@@ -130,7 +130,7 @@ Mitra was built with love, drawing massive inspiration from:
 
 We thank these projects for paving the way.
 
-**The "Why"**: While there are many incredible tools for *coding* (Cursor, Copilot, Windsurf), Mitra fulfills the need for a **Scalable Consultant AI Framework**. It is designed to be:
+**The "Why"**: While there are many incredible tools for *coding* (Cursor, Copilot, Windsurf), Mitra fulfills the need for a **Scalable AI Implementation Framework**. It is designed to be:
 - **Customizable**: Easy to extend with new agents.
 - **Full-Lifecycle**: Covering the entire journey from Architecture and Requirements to direct implementation and testing.
 

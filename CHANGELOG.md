@@ -22,12 +22,14 @@ Version 3.0.0 marks the definitive transition of Mitra from a strategy-only cons
 -   **Full-Lifecycle Enablement**: Agents are now authorized to generate production-grade code, unit tests, and reference implementations.
 -   **Implementation Engine**: Rebranded core logic from "Consultancy" to "Implementation" to better reflect the new execution-oriented behavior.
 -   **Execution Mode**: Replaced "Consultancy Mode" with "Execution Mode" in all system-wide documentation (`README.md`, `GUIDE.md`, etc.).
+-   **10x Developer Skill**: Introduced a new, language-agnostic `developer.md` workflow for high-performance software engineering and direct implementation.
 
 ### 🛠️ Changes
 
 -   **Persona Refactoring**: Updated all 6 core agent personas to include the new "Execution & Implementation" policy.
 -   **Workflow Synchronization**: Synchronized 20+ workflows across Source XML, Gemini TOML, and Claude MD to remove non-implementation directives.
 -   **Registry Update**: Updated the Agent Registry to reflect development capabilities and implementation focuses.
+-   **Terminology Migration**: Final sweep to replace "Consultancy" with "Full-Lifecycle Implementation" across the entire repository.
 
 ### ⚠️ Deprecated / Removed
 

@@ -1,6 +1,6 @@
 # Mitra Directory Architecture
 
-This document defines the definitive directory structure for the Mitra multi-agent consultancy system. AI agents MUST reference this tree to locate their personas, workflows, and memory states.
+This document defines the definitive directory structure for the Mitra multi-agent Full-Lifecycle Development Platform. AI agents MUST reference this tree to locate their personas, workflows, and memory states.
 
 ## 🏁 Project Root Structure
 
